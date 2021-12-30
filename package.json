@@ -6,9 +6,18 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.16.13",
+    "axios": "^0.24.0",
+    "i18next": "^20.6.0",
+    "imreact-carousel": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-i18next": "^11.11.4",
+    "react-languages-select": "^1.0.20",
     "react-scripts": "4.0.3",
+    "sass": "^1.38.2",
+    "styled-components": "^5.3.1",
+    "styled-system": "^5.1.5",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -19,8 +28,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
