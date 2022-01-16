@@ -68,3 +68,65 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+export const Carroussel = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 160px 0px;
+  margin-left: 100px;
+
+  .slide img {
+    width: 700px;
+  }
+  
+  .slide {
+    transform: scale(0.7);
+    transition: transform 800ms;
+    opacity: 0.5;
+  }
+  
+  .activeSlide {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+`;
+
+        <Styled.Carroussel>
+          <Slider {...settings}>
+            {images.map((img, idx) => (
+              <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
+                <img src={img} alt={img} />
+              </div>
+            ))}
+          </Slider>
+        </Styled.Carroussel>
+
+  const [imageIndex, setImageIndex] = useState(0);
+
+  const settings = {
+    infinite: true,
+    lazyLoad: true,
+    speed: 800,
+    slidesToShow: 2,
+    centerMode: false,
+    centerPadding: 0,
+    beforeChange: (current, next) => setImageIndex(next),
+  };
+
+
+
+      <Styled.ProjectContainer>
+        <Styled.DescriptionContainer>
+          <Styled.ProjectTitle>
+            {t("projetos.apartamentoRetro.title")}
+          </Styled.ProjectTitle>
+
+          <Styled.Description>
+            {t("projetos.apartamentoRetro.description")}
+          </Styled.Description>
+        </Styled.DescriptionContainer>
+
+      </Styled.ProjectContainer>

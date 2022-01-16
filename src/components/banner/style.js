@@ -98,11 +98,9 @@ export const Description = styled.span`
   color: #333333;
 `;
 
-export const ButtonStyle = styled.button`
+export const ButtonStyle = styled.a`
   ${typography}
-  ${flex}
   ${layout}
-  ${grid}
   ${space}
   ${position}
   background: transparent;

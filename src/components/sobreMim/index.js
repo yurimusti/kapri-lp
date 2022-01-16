@@ -9,7 +9,7 @@ import * as Styled from "./style";
 const Sobremim = () => {
   const { t } = useTranslation();
   return (
-    <Styled.BoxSobremim minHeight={["110vh", "80vh", "80vh"]}>
+    <Styled.BoxSobremim minHeight={["110vh", "80vh", "80vh"]} id="sobremim">
       <Styled.ImageContainer width={['50%', '25%', '22%']} left={["25%", "12%", 110]} bottom={['52%', 0, 0]}>
         <Styled.Image width={["100%", "80%", "100%"]} src={image} />
       </Styled.ImageContainer>

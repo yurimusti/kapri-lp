@@ -57,6 +57,28 @@ const en = {
       sucessoSend:
         "Message sent successfully. Our team will contact you in the next few days.",
     },
+    projetos: {
+      apartamentoClassico: {
+        title: "Apartamento Clássico",
+        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+      },
+      apartamentoClean: {
+        title: "Apartamento Clean",
+        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+      },
+      burguerCafe: {
+        title: "Burguer Cafe",
+        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+      },
+      cafeBar: {
+        title: "Café bar anos 70",
+        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+      },
+      apartamentoRetro: {
+        title: "Apartamento Retrô",
+        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+      },
+    }
   },
 };
 

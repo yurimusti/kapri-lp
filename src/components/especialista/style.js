@@ -79,6 +79,7 @@ export const Title = styled.span`
   font-weight: bold;
   line-height: 36px;
   color: #333333;
+  margin-left: 40px;
 `;
 
 export const InfoContainer = styled.div`

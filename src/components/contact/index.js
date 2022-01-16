@@ -65,7 +65,7 @@ const BoxContact = () => {
   };
 
   return (
-    <Styled.BoxContact
+    <Styled.BoxContact id="contact"
       flexDirection={["column", "column", "row"]}
       p={[24, 24, 120]}
     >

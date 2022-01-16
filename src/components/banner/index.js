@@ -12,6 +12,7 @@ const Banner = () => {
     <Styled.BoxBanner
       flexDirection={["row", "column", "column"]}
       minHeight={["67vh", "100vh", "100vh"]}
+      id="home"
     >
       <Styled.OpacityBox
         top={["35%", "35%", "23%"]}
@@ -19,11 +20,15 @@ const Banner = () => {
         width={["90%", "90%", 700]}
       >
         <Styled.ButtonStyle
+          href="#projects"
           display={["none", "none", "flex"]}
+          mb={[10, 10, 20]}
           // top={["105%", "105%", ""]}
           // left={["36%", "100%", ""]}
         >
-          <Styled.ButtonText>{t("banner.verProjetos")}</Styled.ButtonText>
+          <Styled.ButtonText>
+            {t("banner.verProjetos")}
+          </Styled.ButtonText>
         </Styled.ButtonStyle>
       </Styled.OpacityBox>
       <Styled.BoxLeft>
@@ -37,7 +42,7 @@ const Banner = () => {
         <Styled.Description
           pr={[35, 35, 0]}
           mt={[0, 0, 48]}
-          top={["53%", "53%", "35%"]}
+          top={["53%", "53%", "30%"]}
           left={["10%", "10%", "10%"]}
         >
           {t("banner.description1")}
@@ -47,10 +52,11 @@ const Banner = () => {
       </Styled.BoxLeft>
       <Styled.BoxRight>
         <Styled.Image
-          width={["100%", "100%", "80%"]}
+          width={["100%", "100%", "100%"]}
           position={["absolute", "absolute", "inherit"]}
           left={["0", "0", "0"]}
-          margin={["0", "0", "10%"]}
+          mt={["0", "0", "8%"]}
+          mb={["0", "0", "20%"]}
           src={image}
         />
       </Styled.BoxRight>

@@ -24,7 +24,3 @@ export const Body = styled.div`
 export const FooterContainer = styled.div`
   width: 100%;
 `;
-
-export const Image = styled.img`
-  width: 15%;
-`;

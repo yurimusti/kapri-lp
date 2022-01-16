@@ -4,7 +4,6 @@ import "./index.scss";
 import App from "./App";
 import "./translate";
 
-import 'imreact-carousel/dist/index.css'
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
 ReactDOM.render(
