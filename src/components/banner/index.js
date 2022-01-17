@@ -17,7 +17,7 @@ const Banner = () => {
       <Styled.OpacityBox
         top={["35%", "35%", "23%"]}
         left={["5%", "10%", "10%"]}
-        width={["90%", "90%", 700]}
+        width={["90%", "82%", 700]}
       >
         <Styled.ButtonStyle
           href="#projects"
@@ -34,7 +34,7 @@ const Banner = () => {
       <Styled.BoxLeft>
         <Styled.Title
           fontSize={[32, 32, 56]}
-          left={["25%", "25%", "10%", "10%"]}
+          left={["25%", "36%", "10%", "10%"]}
           top={["33%", "33%", "23%"]}
         >
           Interior Design
@@ -44,6 +44,7 @@ const Banner = () => {
           mt={[0, 0, 48]}
           top={["53%", "53%", "30%"]}
           left={["10%", "10%", "10%"]}
+          textAlign={["center", "center", "inherit"]}
         >
           {t("banner.description1")}
           <br /> {t("banner.description2")}

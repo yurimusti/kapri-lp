@@ -37,6 +37,7 @@ export const InfoContainer = styled.div`
 `;
 
 export const TitleContainer = styled.div`
+  ${space}
   margin-bottom: 24px;
 `;
 
@@ -51,12 +52,14 @@ export const Title = styled.span`
 `;
 
 export const DescriptionContainer = styled.div`
+  ${space}
   margin-bottom: 24px;
 `;
 
 export const Description = styled.span``;
 
 export const DescriptionInfo = styled.span`
+  ${space}
   font-family: Nova;
   font-style: normal;
   font-weight: normal;

@@ -72,21 +72,24 @@ const BoxContact = () => {
       <Styled.BoxContactInfo>
         <Styled.TitleContact
           fontSize={[28, 28, 36]}
-          textAlign={["center", "inherit", "inherit"]}
+          textAlign={["center", "center", "inherit"]}
         >
           {t("contato.title")}
         </Styled.TitleContact>
-        <Styled.DescriptionContact textAlign={["center", "inherit", "inherit"]}>
+        <Styled.DescriptionContact textAlign={["center", "center", "inherit"]}>
           {t("contato.descriptionContato")}
           <br />
           {t("contato.descriptionContato2")}
         </Styled.DescriptionContact>
         <Styled.FuncionamentoContact
-          textAlign={["center", "inherit", "inherit"]}
+          textAlign={["center", "center", "inherit"]}
         >
           {t("contato.horarioFuncionamento")}
         </Styled.FuncionamentoContact>
-        <Styled.Items pt={[24, 24, 0]}>
+        <Styled.Items 
+        pt={[24, 24, 0]}
+        alignSelf={["center", "center", "inherit"]}
+        >
           <Styled.Item>
             <Styled.ItemIcon src={phone} />
             <Styled.ItemText fontSize={[16, 16, 18]}>

@@ -11,7 +11,10 @@ import globalIcon from "../../assets/icon/global.svg";
 const Header = () => {
   const { Option } = Select;
   return (
-    <Styled.Main>
+    <Styled.Main 
+    pr={[44, 44, 144]}
+    pl={[44, 44, 144]}
+    >
       <Styled.ImageContainer href="#home">
         <Styled.Image
           width={["52%", "36%", "45%"]}
@@ -19,8 +22,8 @@ const Header = () => {
           src={kapriLogo}
         />
       </Styled.ImageContainer>
-      <Styled.NavBar display={["none", "none", "none", "flex"]}>
-        <Styled.NavTitles display={["none", "none", "none", "flex"]}>
+      <Styled.NavBar display={["none", "none", "flex"]}>
+        <Styled.NavTitles display={["none", "none", "flex"]}>
           <Styled.Title href="#servicos">
             Serviços
           </Styled.Title>

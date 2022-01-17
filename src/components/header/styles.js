@@ -3,13 +3,13 @@ import { layout, typography, space } from "styled-system";
 
 export const Main = styled.div`
   ${layout}
+  ${space}
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
   width: 100%;
   background: #272425;
-  padding: 0px 144px;
   position: fixed;
   z-index: 10;
 `;

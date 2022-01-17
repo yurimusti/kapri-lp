@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { layout, typography, flex, position, space } from "styled-system";
+import { layout, typography, flexbox, position, space } from "styled-system";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -33,7 +33,6 @@ export const TitleContainer = styled.div`
   margin-bottom: 24px;
   width: 100%;
   justify-content: space-between;
-  padding: 0px 144px;
 `;
 
 export const NavTitle = styled.button`
@@ -41,8 +40,8 @@ export const NavTitle = styled.button`
   cursor: pointer;
   font-family: Nova;
   font-weight: bold;
-  font-size: 16px;
   color: #989898;
+  font-size: 16px;
   border: 0px;
   background-color: transparent;
   transition: 0.5s;
@@ -63,6 +62,7 @@ export const Title = styled.div`
 
 export const ProjectContainer = styled.div`
   ${space}
+  ${flexbox}
   ${typography}
   display: flex;
 `;
@@ -78,6 +78,8 @@ export const TitleProject = styled.span`
 `;
 
 export const ProjectTitle = styled.span`
+  ${typography}
+  ${flexbox}
   font-family: Nova;
   font-weight: bold;
   font-size: 28px;
@@ -95,6 +97,8 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const Description = styled.span`
+  ${typography}
+  ${layout}
   font-family: Nova;
   font-weight: normal;
   font-size: 16px;
@@ -103,4 +107,27 @@ export const Description = styled.span`
   color: #333333;
   opacity: 0.7;
   width: 400px;
+`;
+
+export const Carroussel = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 100px 0px;
+  margin-left: 100px;
+
+  .slide img {
+    width: 700px;
+  }
+  
+  .slide {
+    transform: scale(0.7);
+    transition: transform 800ms;
+    opacity: 0.5;
+  }
+  
+  .activeSlide {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
 `;

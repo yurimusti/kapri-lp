@@ -105,10 +105,13 @@ export const BoxForm = styled.div`
 `;
 
 export const Items = styled.div`
+  ${typography}
   ${space}
+  ${flexbox}
 `;
 
 export const Item = styled.div`
+  ${typography}
   display: flex;
   align-items: center;
   margin-top: 22px;

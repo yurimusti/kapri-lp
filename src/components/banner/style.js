@@ -84,6 +84,7 @@ export const Title = styled.span`
 export const Description = styled.span`
   ${space}
   ${position}
+  ${typography}
   z-index: 4;
   position: absolute;
 
@@ -92,6 +93,7 @@ export const Description = styled.span`
   font-weight: normal;
   font-size: 20px;
   line-height: 150%;
+  text-align: center;
   /* margin-top: 48px; */
   /* or 30px */
 

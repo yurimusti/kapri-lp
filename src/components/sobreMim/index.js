@@ -10,7 +10,7 @@ const Sobremim = () => {
   const { t } = useTranslation();
   return (
     <Styled.BoxSobremim minHeight={["110vh", "80vh", "80vh"]} id="sobremim">
-      <Styled.ImageContainer width={['50%', '25%', '22%']} left={["25%", "12%", 110]} bottom={['52%', 0, 0]}>
+      <Styled.ImageContainer width={['50%', '45%', '22%']} left={["25%", "30%", 110]} bottom={['52%', '60%', 0]}>
         <Styled.Image width={["100%", "80%", "100%"]} src={image} />
       </Styled.ImageContainer>
       <Styled.InfoContainer
@@ -20,16 +20,16 @@ const Sobremim = () => {
         pt={[240, 240, 24]}
         pr={[24, 24, 24]}
       >
-        <Styled.TitleContainer>
+        <Styled.TitleContainer ml={[44, 44, 10]}>
           <Styled.Title>{t("sobreMim.title")}</Styled.Title>
         </Styled.TitleContainer>
-        <Styled.DescriptionContainer>
+        <Styled.DescriptionContainer ml={[44, 44, 10]}>
           <Styled.Description>
             <Styled.Nome>Karen Priscila Araújo de Mendonça</Styled.Nome> <br />
             <Styled.Profissao>{t("sobreMim.nomeProfissao")}</Styled.Profissao>
           </Styled.Description>
         </Styled.DescriptionContainer>
-        <Styled.DescriptionInfo>
+        <Styled.DescriptionInfo ml={[44, 44, 10]}>
           {t("sobreMim.descricao")}
         </Styled.DescriptionInfo>
       </Styled.InfoContainer>
