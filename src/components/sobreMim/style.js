@@ -22,6 +22,9 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
   ${layout}
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 9px 29px 2px rgba(0,0,0,0.43); 
+  box-shadow: 10px 9px 29px 2px rgba(0,0,0,0.43);
 `;
 
 export const InfoContainer = styled.div`

@@ -34,11 +34,26 @@ export const TitleContainer = styled.div`
   width: 100%;
   height: 50px;
   justify-content: space-between;
+  align-items: center;
 
-  .swiper-pagination-bullet {
-    width: 25px;
-    height: 5px;
-    border-radius: 5px;
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: black;
+  }
+
+  .swiper-button-prev {
+    left: -5px;
+  }
+  .swiper-button-next {
+    right: -5px;
+  }
+
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 14px;
+  }
+
+  .swiper-wrapper {
+    padding: 0px 15px;
   }
 `;
 
@@ -123,25 +138,69 @@ export const Carroussel = styled.div`
   margin-top: 45px;
   
   .swiper-container {
-    height: 500px;
+    height: 480px;
+    
+    .swiper-wrapper{
+
+      .swiper-slide{
+        transition: 0.5s;
+      }
+      .swiper-slide-next {
+        transform: scale(0.9);
+      }
+    }
+
+    img {
+      border-radius: 10px;
+      border: 0px solid #fff;
+      -webkit-box-shadow: 29px 6px 32px -11px rgba(0,0,0,0.39); 
+      box-shadow: 29px 6px 32px -11px rgba(0,0,0,0.39);
+    }
+  }
+  
+  .swiper-pagination {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 46px;
   }
 
-  .swiper-pagination-bullet {
-    width: 25px;
-    height: 5px;
-    border-radius: 5px;
-    left: 20%;
+  .swiper-pagination-fraction {
+    display: flex;
+    font-family: Roboto;
+    color: black;
+    gap: 4px;
   }
 
-  .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-    left: 25%;
+  .swiper-container-horizontal > .swiper-pagination-fraction.swiper-pagination-fraction {
 
-    @media (max-width: 600px) {
-      left: 55%;
+    //@media (max-width: 600px) {
+    //  left: 55%;
+    //}
+    //@media (max-width: 768px) {
+    //  left: 55%;
+    //}
+  }
+  .swiper-button-prev,
+    .swiper-button-next {
+      cursor: pointer;
+      display: block;
+      color: black;
+      top: 97.4%;
     }
-    @media (max-width: 768px) {
-      left: 55%;
+
+    .swiper-button-prev {
+      left: 16px;
     }
-}
+    .swiper-button-next {
+      left: 96px;
+    }
+
+    .swiper-button-prev:after, .swiper-button-next:after {
+      font-size: 14px;
+    }
+
+    .swiper-wrapper {
+      padding: 0px 15px;
+    }
 
 `;

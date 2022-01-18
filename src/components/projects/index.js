@@ -31,7 +31,7 @@ const Projects = () => {
 
   return (
     <Styled.BoxProjects id="projects"
-    height={["220vh", "140vh", "140vh"]}
+    height={["220vh", "140vh", "125vh"]}
     >
 
       <Styled.NavContainer>
@@ -51,11 +51,9 @@ const Projects = () => {
 
           <Swiper
           spaceBetween={1}
-          slidesPerView={2}
-          pagination={{ 
-            clickable: true,
-            dynamicBullets: true,
-           }}
+          slidesPerView={window.innerWidth < 768 ? 2 : 3}
+          navigation
+          loop
           >
             <SwiperSlide className="slide">
               <Styled.NavTitle fontSize={[8, 12, 16]}
@@ -134,12 +132,12 @@ const Projects = () => {
           >
             <Swiper
             pagination={{ 
-              clickable: true,
-              dynamicBullets: true,
+              type: "fraction",
              }}
-            effect={"coverflow"}
+            navigation
+            //effect={"coverflow"}
             spaceBetween={50}
-            slidesPerView={1}
+            slidesPerView={window.innerWidth < 768 ? 1 : 2}
             loop={true}
             coverflowEffect={{
               rotate: 20,
@@ -197,9 +195,9 @@ const Projects = () => {
                 clickable: true,
                 dynamicBullets: true,
                }}
-              effect={"coverflow"}
+              //effect={"coverflow"}
               spaceBetween={50}
-              slidesPerView={1}
+              slidesPerView={2}
               loop={true}
               coverflowEffect={{
                 rotate: 20,
@@ -225,6 +223,7 @@ const Projects = () => {
                 <SwiperSlide>
                   <img src={apartamentoCleanImage} width={750} /> 
                 </SwiperSlide>
+
             
               </Swiper>
             </Styled.Carroussel>
@@ -257,9 +256,9 @@ const Projects = () => {
                 clickable: true,
                 dynamicBullets: true,
                }}
-              effect={"coverflow"}
+              //effect={"coverflow"}
               spaceBetween={50}
-              slidesPerView={1}
+              slidesPerView={2}
               loop={true}
               coverflowEffect={{
                 rotate: 20,
@@ -317,9 +316,9 @@ const Projects = () => {
                 clickable: true,
                 dynamicBullets: true,
                }}
-              effect={"coverflow"}
+              //effect={"coverflow"}
               spaceBetween={50}
-              slidesPerView={1}
+              slidesPerView={2}
               loop={true}
               coverflowEffect={{
                 rotate: 20,
@@ -377,7 +376,7 @@ const Projects = () => {
                 clickable: true,
                 dynamicBullets: true,
                }}
-              effect={"coverflow"}
+              //effect={"coverflow"}
               spaceBetween={50}
               slidesPerView={1}
               loop={true}

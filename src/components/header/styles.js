@@ -36,10 +36,10 @@ export const NavTitles = styled.div`
 `
 
 export const Title = styled.a`
+    ${typography}
     position: relative;
     cursor: pointer;
     margin: 0px 25px;
-    font-size: 15px;
     margin: 0px 15px;
     color: #fff;
     opacity: 0.7;

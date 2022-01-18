@@ -12,7 +12,7 @@ const Especialista = () => {
   const { t } = useTranslation();
   return (
     <Styled.BoxEspecialista 
-    minHeight={["67vh", "100vh", "100vh"]}
+    minHeight={["67vh", "100vh", "85vh"]}
     id="servicos"
     >
       <Styled.BoxLeft display={["none", "none", "flex"]}>

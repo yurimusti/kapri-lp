@@ -58,6 +58,7 @@ export const Image = styled.img`
   ${grid}
   ${space}
   ${position}
+  border-radius: 5px;
 `;
 
 export const Title = styled.span`

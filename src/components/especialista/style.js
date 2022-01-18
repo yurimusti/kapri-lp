@@ -35,6 +35,9 @@ export const BoxLeft = styled.div`
 `;
 
 export const Image1 = styled.img`
+  -webkit-box-shadow: 10px 9px 34px 9px rgba(0,0,0,0.35); 
+  box-shadow: 10px 9px 34px 9px rgba(0,0,0,0.35);
+  border-radius: 10px;
   position: absolute;
   z-index: 3;
   margin-left: 138px;
@@ -42,12 +45,15 @@ export const Image1 = styled.img`
 `;
 
 export const Image2 = styled.img`
+  border-radius: 5px;
+  border: none;
   position: absolute;
   z-index: 4;
   bottom: 0;
   right: 0;
   margin-bottom: 85px;
-  border: 1px solid #fff;
+  -webkit-box-shadow: 10px 9px 34px 9px rgba(0,0,0,0.32); 
+  box-shadow: 10px 9px 34px 9px rgba(0,0,0,0.32);
 `;
 
 export const BoxRight = styled.div`

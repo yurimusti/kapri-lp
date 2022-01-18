@@ -24,20 +24,32 @@ const Header = () => {
       </Styled.ImageContainer>
       <Styled.NavBar display={["none", "none", "flex"]}>
         <Styled.NavTitles display={["none", "none", "flex"]}>
-          <Styled.Title href="#servicos">
+          <Styled.Title 
+          href="#servicos"
+          fontSize={[12, 13, 15]}
+          >
             Serviços
           </Styled.Title>
-          <Styled.Title href="#projects">
+          <Styled.Title
+           href="#projects"
+           fontSize={[12, 13, 15]}
+           >
             Projetos
           </Styled.Title>
-          <Styled.Title href="#sobremim">
+          <Styled.Title 
+          href="#sobremim"
+          fontSize={[12, 13, 15]}
+          >
             Sobre mim
           </Styled.Title>
-          <Styled.Title href="#contact">
+          <Styled.Title
+           href="#contact"
+           fontSize={[12, 13, 15]}
+          >
             Contato
           </Styled.Title>
         </Styled.NavTitles>
-        <Styled.DropLanguage display={["none", "none", "none", "flex"]}>
+        <Styled.DropLanguage display={["flex", "flex", "flex", "flex"]}>
           <Styled.globalIcon alt="" src={globalIcon}/>
           <Select
             className="antD"
