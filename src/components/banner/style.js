@@ -91,7 +91,7 @@ export const Description = styled.span`
   font-family: Nova;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
   text-align: center;
   /* margin-top: 48px; */

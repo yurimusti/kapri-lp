@@ -25,6 +25,7 @@ const Especialista = () => {
         >
           <Styled.Title
           fontSize={[28, 28, 36]}
+          ml={[0, 0, 40]}
           >
             {t("especialista.title")}
           </Styled.Title>

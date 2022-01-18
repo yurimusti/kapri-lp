@@ -60,21 +60,23 @@ const ptbr = {
         "Mensagem enviada com sucesso. Nossa equipe entrará em contato com você nos próximos dias.",
     },
     projetos: {
+      section: "Projetos",
       apartamentoClassico: {
         title: "Apartamento Clássico",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        description: "O estilo clássico nunca sai de moda, é atemporal e eterno. Quem gosta deste tipo de decoração procura um ambiente elegante, requintado e sofisticado. Algumas das características deste estilo incluem peças em madeira escura ou média, acessórios metálicos em bronze e ouro, pedras naturais e paredes bem acabadas em tons de bege, branco e palha. O Sr. e a Sra. Bufanio já tinham lindos móveis de família que também foram acrescentados ao projeto." 
       },
       apartamentoClean: {
         title: "Apartamento Clean",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        description:
+         "O estilo clássico nunca sai de moda, é atemporal e eterno. Quem gosta deste tipo de decoração procura um ambiente elegante, requintado e sofisticado. Algumas das características deste estilo incluem peças em madeira escura ou média, acessórios metálicos em bronze e ouro, pedras naturais e paredes bem acabadas em tons de bege, branco e palha.O Sr. e a Sra. Bufanio já tinham lindos móveis de família que também foram acrescentados ao projeto." 
       },
       burguerCafe: {
         title: "Burguer Cafe",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        description: "Em andamento." 
       },
       cafeBar: {
         title: "Café bar anos 70",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        description: "Com o conceito musical, estilos dos anos 50, 60, temos violão, discos e máquina musical. É um lugar divertido para curtir um happy hour com os amigos depois do trabalho, ou para dar uma pausa de tarde quando estiver passeando pela cidade. É um local com o melhor de todos os tempos, muito acolhedor e autêntico." 
       },
       apartamentoRetro: {
         title: "Apartamento Retrô",

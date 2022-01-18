@@ -60,25 +60,26 @@ const ch = {
         "Nachricht erfolgreich gesendet. Unser Team wird sich in den nächsten Tagen bei Ihnen melden.",
     },
     projetos: {
+      section: "Projekte",
       apartamentoClassico: {
-        title: "Apartamento Clássico",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Klassische Wohnung",
+        description: "Der klassische Stil kommt nie aus Mode, ist zeitlos und unvergänglich.  Diejenigen die diese art von Dekoration mögen sind auf der Suche auf einem elegantem, raffiniertem und anspruchsvolles Umfeld.   Einige der Eigenschaften dieses Stils sind Stücke aus dunklem oder mittlerem Holz, metallische Accessoires aus Bronze und Gold, Natursteine ​​und gut bearbeitete Wände in den Farben Beige, Weiss und Stroh. Herr und Frau Bufanio hatten schon schöne Familienmöbel die auch im Projekt hinzugefügt wurden." 
       },
       apartamentoClean: {
-        title: "Apartamento Clean",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Saubere Wohnung",
+        description: "Der klassische Stil kommt nie aus Mode, ist zeitlos und unvergänglich.  Diejenigen die diese art von Dekoration mögen sind auf der Suche auf einem elegantem, raffiniertem und anspruchsvolles Umfeld.   Einige der Eigenschaften dieses Stils sind Stücke aus dunklem oder mittlerem Holz, metallische Accessoires aus Bronze und Gold, Natursteine ​​und gut bearbeitete Wände in den Farben Beige, Weiss und Stroh. Herr und Frau Bufanio hatten schon schöne Familienmöbel die auch im Projekt hinzugefügt wurden." 
       },
       burguerCafe: {
-        title: "Burguer Cafe",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Burger-Kaffee",
+        description: "im Gange" 
       },
       cafeBar: {
-        title: "Café bar anos 70",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Kaffeebar der 70er",
+        description: "Mit dem musikalischen Konzept haben wir Stile aus den 50er, 60er Jahren, Gitarre, Discos und Musikmaschinen. Es ist ein schöner Ort, um die Happy Hour mit Freunden nach der Arbeit zu genießen, oder einen Nachmittag Pause zu nehmen, wenn Sie in der Stadt sind wandernd. Es ist ein Ort mit dem besten aller Zeiten, sehr einladend und authentisch." 
       },
       apartamentoRetro: {
-        title: "Apartamento Retrô",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Retro-Wohnung",
+        description: "Der Retro-Stil bietet eine Retrospektive in die Vergangenheit, die mit Möbeln, Drucke und Gegenständen spielt, die in anderen Jahrzehnten populär waren. Im Gegensatz zum Vintage-Trend, bei dem echte Stücke, Artikel und andere Dekorationszubehör aus der Vergangenheit zum Vorschein kommen, werden im Retro-Stil neue Versionen angeboten, die von alten inspiriert sind, sodass das Beste, was andere Zeiten zu bieten haben, recycelt wird. Die Möbel haben spezifische Eigenschaften, wie spitze Füße..." 
       },
     }
   },

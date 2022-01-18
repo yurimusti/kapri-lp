@@ -8,8 +8,8 @@ export const BoxProjects = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 800px;
   background: #fafafa;
+  overflow: hidden;
 `;
 
 export const NavContainer = styled.div`
@@ -32,7 +32,14 @@ export const TitleContainer = styled.div`
   margin-top: 40px;
   margin-bottom: 24px;
   width: 100%;
+  height: 50px;
   justify-content: space-between;
+
+  .swiper-pagination-bullet {
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+  }
 `;
 
 export const NavTitle = styled.button`
@@ -41,7 +48,7 @@ export const NavTitle = styled.button`
   font-family: Nova;
   font-weight: bold;
   color: #989898;
-  font-size: 16px;
+  font-size: 12px;
   border: 0px;
   background-color: transparent;
   transition: 0.5s;
@@ -110,24 +117,31 @@ export const Description = styled.span`
 `;
 
 export const Carroussel = styled.div`
+  ${layout}
+  ${space}
   width: 100%;
-  height: 100%;
-  padding: 100px 0px;
-  margin-left: 100px;
+  margin-top: 45px;
+  
+  .swiper-container {
+    height: 500px;
+  }
 
-  .slide img {
-    width: 700px;
+  .swiper-pagination-bullet {
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+    left: 20%;
   }
-  
-  .slide {
-    transform: scale(0.7);
-    transition: transform 800ms;
-    opacity: 0.5;
-  }
-  
-  .activeSlide {
-    transform: scale(1);
-    opacity: 1;
-  }
-  
+
+  .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 25%;
+
+    @media (max-width: 600px) {
+      left: 55%;
+    }
+    @media (max-width: 768px) {
+      left: 55%;
+    }
+}
+
 `;

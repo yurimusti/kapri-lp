@@ -31,6 +31,7 @@ export const InfoContainer = styled.div`
   position: absolute;
   width: 100%;
   background: rgba(177, 121, 113, 0.2);
+  font-size: 30px;
   z-index: 4;
   display: flex;
   flex-direction: column;

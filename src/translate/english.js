@@ -58,25 +58,26 @@ const en = {
         "Message sent successfully. Our team will contact you in the next few days.",
     },
     projetos: {
+      section: "Projects",
       apartamentoClassico: {
-        title: "Apartamento Clássico",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Classic Apartment",
+        description: "The classic style never goes out of fashion, is timeless and everlasting. Those who like this type of decoration are looking for an elegant, refined and sophisticated environment. Some of the characteristics of this style include pieces made of dark or medium wood, metallic accessories made of bronze and gold, natural stones and well-finished walls in shades of beige, white and straw. Mr and Mrs Bufanio already had beautiful family furniture that was also added to the project." 
       },
       apartamentoClean: {
-        title: "Apartamento Clean",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Clean Apartment",
+        description: "The classic style never goes out of fashion, is timeless and everlasting. Those who like this type of decoration are looking for an elegant, refined and sophisticated environment. Some of the characteristics of this style include pieces made of dark or medium wood, metallic accessories made of bronze and gold, natural stones and well-finished walls in shades of beige, white and straw. Mr and Mrs Bufanio already had beautiful family furniture that was also added to the project." 
       },
       burguerCafe: {
-        title: "Burguer Cafe",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Coffe Burguer",
+        description: "In progress" 
       },
       cafeBar: {
-        title: "Café bar anos 70",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Cafe bar 70's",
+        description: "With the musical concept, styles from the 50s, 60s, we have guitar, discos and musical machines. It's a fun place to enjoy happy hour with friends after work, or to take an afternoon break when you're wandering around town. It is a place with the best of all times, very welcoming and authentic." 
       },
       apartamentoRetro: {
-        title: "Apartamento Retrô",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        title: "Retro Apartment",
+        description: "The retro style offers a retrospective into the past playing with furniture, prints, and items that were popular in other decades. Contrary to the vintage trend, which shows real pieces, articles and other decorative accessories from the past, the retro style offers new versions inspired by old ones so that the best of what other times have to offer is recycled becomes. The furniture has specific characteristics such as pointed feet, use of futon in the upholstery..."
       },
     }
   },

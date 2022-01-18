@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
+import { layout } from "styled-system";
+
 export const Main = styled.div`
-  height: 240px;
+  ${layout}
   background: #333333;
   width: 100%;
   display: flex;

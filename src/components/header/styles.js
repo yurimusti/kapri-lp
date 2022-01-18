@@ -50,7 +50,7 @@ export const Title = styled.a`
        content: "";
        position: absolute;
        background: #b17971;
-       height: 3px;
+       height: 2px;
        width: 0;
        left: 0;
        bottom: -5px;

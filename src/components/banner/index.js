@@ -11,7 +11,7 @@ const Banner = () => {
   return (
     <Styled.BoxBanner
       flexDirection={["row", "column", "column"]}
-      minHeight={["67vh", "100vh", "100vh"]}
+      minHeight={["67vh", "45vh", "100vh"]}
       id="home"
     >
       <Styled.OpacityBox
@@ -33,8 +33,8 @@ const Banner = () => {
       </Styled.OpacityBox>
       <Styled.BoxLeft>
         <Styled.Title
-          fontSize={[32, 32, 56]}
-          left={["25%", "36%", "10%", "10%"]}
+          fontSize={[24, 32, 56]}
+          left={["30%", "38%", "10%", "10%"]}
           top={["33%", "33%", "23%"]}
         >
           Interior Design
@@ -43,8 +43,9 @@ const Banner = () => {
           pr={[35, 35, 0]}
           mt={[0, 0, 48]}
           top={["53%", "53%", "30%"]}
-          left={["10%", "10%", "10%"]}
+          left={["10%", "15%", "10%"]}
           textAlign={["center", "center", "inherit"]}
+          fontsize={[10, 16, 20]}
         >
           {t("banner.description1")}
           <br /> {t("banner.description2")}

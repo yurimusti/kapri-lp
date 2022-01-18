@@ -74,12 +74,12 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.span`
   ${typography}
+  ${space}
   font-family: Nova;
   font-style: normal;
   font-weight: bold;
   line-height: 36px;
   color: #333333;
-  margin-left: 40px;
 `;
 
 export const InfoContainer = styled.div`

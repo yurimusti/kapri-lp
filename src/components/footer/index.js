@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <Styled.Main>
+    <Styled.Main height={[100, 150, 240]}>
       <Styled.Image alt="" src={kapriLogo} />
       <Styled.TextCopyright>{t("contato.copyright")}</Styled.TextCopyright>
     </Styled.Main>
