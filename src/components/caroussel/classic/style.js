@@ -77,12 +77,10 @@ export const Carroussel = styled.div`
   @media (max-width: 520px) {
     margin-left: 0px;
   }
-  
+
   .swiper-container {
     height: 540px;
     
-    .swiper-wrapper{
-
     .swiper-wrapper {
       .swiper-slide {
         transition: 0.5s;
@@ -247,6 +245,10 @@ export const Carroussel = styled.div`
 
       @media (max-width: 1200px) {
         padding: 0px 0px;
+      }
+
+      @media (max-width: 640px) {
+        padding-left: 50px;
       }
     }
 

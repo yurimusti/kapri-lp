@@ -64,7 +64,7 @@ export const TitleContainer = styled.div`
   align-items: center;
 
   .swiper-wrapper{
-        padding: 0px 65px;
+        padding: 0px 50px;
       }
   
   @media (max-width: 768px) { 
