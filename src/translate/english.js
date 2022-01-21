@@ -61,23 +61,28 @@ const en = {
       section: "Projects",
       apartamentoClassico: {
         title: "Classic Apartment",
+        progress: "Project finished",
         description: "The classic style never goes out of fashion, is timeless and everlasting. Those who like this type of decoration are looking for an elegant, refined and sophisticated environment. Some of the characteristics of this style include pieces made of dark or medium wood, metallic accessories made of bronze and gold, natural stones and well-finished walls in shades of beige, white and straw. Mr and Mrs Bufanio already had beautiful family furniture that was also added to the project." 
       },
       apartamentoClean: {
         title: "Clean Apartment",
-        description: "The classic style never goes out of fashion, is timeless and everlasting. Those who like this type of decoration are looking for an elegant, refined and sophisticated environment. Some of the characteristics of this style include pieces made of dark or medium wood, metallic accessories made of bronze and gold, natural stones and well-finished walls in shades of beige, white and straw. Mr and Mrs Bufanio already had beautiful family furniture that was also added to the project." 
+        progress: "In Progress",
+        description: "" 
       },
       burguerCafe: {
         title: "Coffe Burguer",
-        description: "In progress" 
+        progress: "Project finished",
+        description: "Inspired by the African culture in Brazil, we created an authentic project to remember the owner's roots. Africa is a warm, colorful place, rich in ancient cultures and rich in beauty, so we created a place to praise and honor our ancestors. Black Burger Café is a cozy place for you to gather with friends and family, and taste delicious burgers that also honor this struggle." 
       },
       cafeBar: {
         title: "Cafe bar 70's",
+        progress: "In Progress",
         description: "With the musical concept, styles from the 50s, 60s, we have guitar, discos and musical machines. It's a fun place to enjoy happy hour with friends after work, or to take an afternoon break when you're wandering around town. It is a place with the best of all times, very welcoming and authentic." 
       },
       apartamentoRetro: {
-        title: "Retro Apartment",
-        description: "The retro style offers a retrospective into the past playing with furniture, prints, and items that were popular in other decades. Contrary to the vintage trend, which shows real pieces, articles and other decorative accessories from the past, the retro style offers new versions inspired by old ones so that the best of what other times have to offer is recycled becomes. The furniture has specific characteristics such as pointed feet, use of futon in the upholstery..."
+        title: "E&D",
+        progress: "In Progress",
+        description: ""
       },
     }
   },

@@ -63,24 +63,33 @@ const ptbr = {
       section: "Projetos",
       apartamentoClassico: {
         title: "Apartamento Clássico",
+        progress: "Projeto finalizado",
         description: "O estilo clássico nunca sai de moda, é atemporal e eterno. Quem gosta deste tipo de decoração procura um ambiente elegante, requintado e sofisticado. Algumas das características deste estilo incluem peças em madeira escura ou média, acessórios metálicos em bronze e ouro, pedras naturais e paredes bem acabadas em tons de bege, branco e palha. O Sr. e a Sra. Bufanio já tinham lindos móveis de família que também foram acrescentados ao projeto." 
       },
       apartamentoClean: {
         title: "Apartamento Clean",
-        description:
-         "O estilo clássico nunca sai de moda, é atemporal e eterno. Quem gosta deste tipo de decoração procura um ambiente elegante, requintado e sofisticado. Algumas das características deste estilo incluem peças em madeira escura ou média, acessórios metálicos em bronze e ouro, pedras naturais e paredes bem acabadas em tons de bege, branco e palha.O Sr. e a Sra. Bufanio já tinham lindos móveis de família que também foram acrescentados ao projeto." 
+        progress: "Em andamento",
+        description: "",
       },
       burguerCafe: {
         title: "Burguer Cafe",
-        description: "Em andamento." 
+        progress: "Projeto finalizado",
+        description: "Inspirado na cultura africana no Brasil, criamos um autêntico projeto para lembrar as raizes do dono. África, é um lugar quente, colorido, rico em culturas antigas e rico em beleza, com isso criamos um lugar para enaltecer e homenagear os nossos ancestrais. O Black Burger Café é um lugar aconchegante para você se reunir com amigos e família, e degustar deliciosos hambúrguer que também homenageia essa luta." 
       },
       cafeBar: {
         title: "Café bar anos 70",
+        progress: "Em andamento",
         description: "Com o conceito musical, estilos dos anos 50, 60, temos violão, discos e máquina musical. É um lugar divertido para curtir um happy hour com os amigos depois do trabalho, ou para dar uma pausa de tarde quando estiver passeando pela cidade. É um local com o melhor de todos os tempos, muito acolhedor e autêntico." 
       },
       apartamentoRetro: {
         title: "Apartamento Retrô",
-        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos" 
+        progress: "Em andamento",
+        description: "O estilo retrô oferece uma retrospectiva do passado, brincando com móveis, estampas e itens que foram populares em outras décadas. Ao contrário da tendência vintage, que mostra peças reais, artigos e outros acessórios decorativos do passado, o estilo retro oferece novas versões inspiradas nas antigas para que o melhor que outros tempos têm para oferecer seja reciclado. Os móveis apresentam características específicas como pés pontiagudos uso de futon nos estofados, sofás / poltronas com braços mais estreitos e presença de algumas peças coloridas e estampadas.As paredes são elementos importantes no retro. O uso de tintas, papéis de parede, mosaicos e azulejos antigos faz parte da caracterização do ambiente. A maioria dos móveis selecionados para este projeto é de designers conhecidos de 1900 a 1990." 
+      },
+      equalityDiversity: {
+        title: "E&D",
+        progress: "Em andamento",
+        description: "" 
       },
     }
   },

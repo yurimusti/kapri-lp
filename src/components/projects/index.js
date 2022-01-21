@@ -12,11 +12,12 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss'
 import 'swiper/components/effect-fade/effect-fade.scss'
 
-import apartamentoClassicoImage from "../../assets/apartamentoClassico.png"
-import apartamentoCleanImage from "../../assets/apartamentoClean.png"
-import cafeBarImage from "../../assets/cafeBar.png"
-import burgerCafeImage from "../../assets/burguerCafe.png"
-import apartamentoRetroImage from "../../assets/apartamentoRetro.png"
+import CafeBarCaroussel from "../caroussel/cafeBar"
+import RetroCaroussel from "../caroussel/retro"
+import CleanCaroussel from "../caroussel/clean"
+import BurguerCafeCaroussel from "../caroussel/burguerCafe"
+import ClassicCaroussel from "../caroussel/classic"
+import EqualityCaroussel from "../caroussel/e&d"
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
@@ -31,7 +32,7 @@ const Projects = () => {
 
   return (
     <Styled.BoxProjects id="projects"
-    height={["220vh", "140vh", "125vh"]}
+    height={["220vh", "140vh", "110vh"]}
     >
 
       <Styled.NavContainer>
@@ -65,7 +66,7 @@ const Projects = () => {
 
             <SwiperSlide>
               <Styled.NavTitle fontSize={[8, 12, 16]}
-              onClick={() => setSelected("apartamentoClean")}
+              onClick={() => setSelected("apartamentoClean")} //useState     const = [date, setDate]
               >
                 {t("projetos.apartamentoClean.title")}
               </Styled.NavTitle>
@@ -95,6 +96,14 @@ const Projects = () => {
                 {t("projetos.apartamentoRetro.title")}
               </Styled.NavTitle>
             </SwiperSlide>
+
+            <SwiperSlide>
+              <Styled.NavTitle fontSize={[8, 12, 16]}
+              onClick={() => setSelected("equalityDiversity")}
+              >
+                {t("projetos.equalityDiversity.title")}
+              </Styled.NavTitle>
+            </SwiperSlide>
             <div ref={navigationPrevRef} />
             <div ref={navigationNextRef} />
 
@@ -107,307 +116,29 @@ const Projects = () => {
       justifyContent={["center", "flex-start", "flex-start"]}
       flexDirection={["column", "row", "row"]}
       alignItems={["center", "flex-start", "flex-start" ]}
-      >
+      > 
         {selected === "apartamentoClassico" && (
-          <>
-            <Styled.DescriptionContainer>
-              <Styled.ProjectTitle 
-              alignSelf={["center", "inherit", "inherit"]}
-              fontSize={[20, 26, 32]}
-              >
-                {t("projetos.apartamentoClassico.title")}
-              </Styled.ProjectTitle>
-
-              <Styled.Description 
-              fontSize={[12, 14, 18]}
-              maxWidth={[300, 300, 600]}
-              textAlign={["center", "inherit", "inherit"]}
-              >
-                {t("projetos.apartamentoClassico.description")}
-              </Styled.Description>
-          </Styled.DescriptionContainer>
-          <Styled.Carroussel
-          pt={["50px", "100px", "100px"]}
-          ml={["0px", "100px", "100px"]}
-          >
-            <Swiper
-            pagination={{ 
-              type: "fraction",
-             }}
-            navigation
-            //effect={"coverflow"}
-            spaceBetween={50}
-            slidesPerView={window.innerWidth < 768 ? 1 : 2}
-            loop={true}
-            coverflowEffect={{
-              rotate: 20,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: false
-            }}
-            >
-
-              <SwiperSlide>
-                <img src={apartamentoClassicoImage} width={750} /> 
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img src={apartamentoClassicoImage} width={750} /> 
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img src={apartamentoClassicoImage} width={750} /> 
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img src={apartamentoClassicoImage} width={750} /> 
-              </SwiperSlide>
-
-            </Swiper>
-          </Styled.Carroussel>
-         </>
+          <ClassicCaroussel />
         )}
 
         {selected === "apartamentoClean" && (
-          <>
-            <Styled.DescriptionContainer>
-              <Styled.ProjectTitle
-              alignSelf={["center", "center", "inherit"]}
-              fontSize={[20, 26, 32]}
-              >
-                {t("projetos.apartamentoClean.title")}
-              </Styled.ProjectTitle>
-              <Styled.Description
-              fontSize={[12, 16, 18]}
-              maxWidth={[300, 400, 600]}
-              textAlign={["center", "inherit", "inherit"]}
-              >
-                {t("projetos.apartamentoClean.description")}
-              </Styled.Description>
-            </Styled.DescriptionContainer>
-              <Styled.Carroussel
-              pt={["50px", "100px", "100px"]}
-              ml={["0px", "100px", "100px"]}
-              >
-              <Swiper
-              pagination={{ 
-                clickable: true,
-                dynamicBullets: true,
-               }}
-              //effect={"coverflow"}
-              spaceBetween={50}
-              slidesPerView={2}
-              loop={true}
-              coverflowEffect={{
-                rotate: 20,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: false
-              }}
-              >
-              
-                <SwiperSlide>
-                  <img src={apartamentoCleanImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={apartamentoCleanImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={apartamentoCleanImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={apartamentoCleanImage} width={750} /> 
-                </SwiperSlide>
-
-            
-              </Swiper>
-            </Styled.Carroussel>
-          </>
+          <CleanCaroussel />
         )}
 
         {selected === "burguerCafe" && (
-          <>
-            <Styled.DescriptionContainer>
-              <Styled.ProjectTitle
-              alignSelf={["center", "center", "inherit"]}
-              fontSize={[20, 26, 32]}
-              >
-                {t("projetos.burguerCafe.title")}
-              </Styled.ProjectTitle>
-              <Styled.Description
-              fontSize={[12, 16, 18]}
-              maxWidth={[300, 400, 600]}
-              textAlign={["center", "inherit", "inherit"]}
-              >
-                {t("projetos.burguerCafe.description")}
-              </Styled.Description>
-            </Styled.DescriptionContainer>
-            <Styled.Carroussel
-              pt={["50px", "100px", "100px"]}
-              ml={["0px", "100px", "100px"]}
-              >
-              <Swiper
-              pagination={{ 
-                clickable: true,
-                dynamicBullets: true,
-               }}
-              //effect={"coverflow"}
-              spaceBetween={50}
-              slidesPerView={2}
-              loop={true}
-              coverflowEffect={{
-                rotate: 20,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: false
-              }}
-              >
-              
-                <SwiperSlide>
-                  <img src={burgerCafeImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={burgerCafeImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={burgerCafeImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={burgerCafeImage} width={750} /> 
-                </SwiperSlide>
-            
-              </Swiper>
-            </Styled.Carroussel>
-          </>
+          <BurguerCafeCaroussel />
         )}
 
         {selected === "cafeBar" && (
-          <>
-            <Styled.DescriptionContainer>
-              <Styled.ProjectTitle
-              alignSelf={["center", "center", "inherit"]}
-              fontSize={[20, 26, 32]}
-              >
-                {t("projetos.cafeBar.title")}
-              </Styled.ProjectTitle>
-              <Styled.Description
-              fontSize={[12, 16, 18]}
-              maxWidth={[300, 400, 600]}
-              textAlign={["center", "inherit", "inherit"]}
-              >
-                {t("projetos.cafeBar.description")}
-              </Styled.Description>
-            </Styled.DescriptionContainer>
-            <Styled.Carroussel
-              pt={["50px", "100px", "100px"]}
-              ml={["0px", "100px", "100px"]}
-              >
-              <Swiper
-              pagination={{ 
-                clickable: true,
-                dynamicBullets: true,
-               }}
-              //effect={"coverflow"}
-              spaceBetween={50}
-              slidesPerView={2}
-              loop={true}
-              coverflowEffect={{
-                rotate: 20,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: false
-              }}
-              >
-              
-                <SwiperSlide>
-                  <img src={cafeBarImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={cafeBarImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={cafeBarImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={cafeBarImage} width={750} /> 
-                </SwiperSlide>
-            
-              </Swiper>
-            </Styled.Carroussel>
-          </>
+          <CafeBarCaroussel />
         )}
 
         {selected === "apartamentoRetro" && (
-          <>
-            <Styled.DescriptionContainer>
-              <Styled.ProjectTitle
-              alignSelf={["center", "center", "inherit"]}
-              fontSize={[20, 26, 32]}
-              >
-                {t("projetos.apartamentoRetro.title")}
-              </Styled.ProjectTitle>
-              <Styled.Description
-              fontSize={[12, 16, 18]}
-              maxWidth={[300, 400, 600]}
-              textAlign={["center", "inherit", "inherit"]}
-              >
-                {t("projetos.apartamentoRetro.description")}
-              </Styled.Description>
-            </Styled.DescriptionContainer>
-            <Styled.Carroussel
-              pt={["50px", "100px", "100px"]}
-              ml={["0px", "100px", "100px"]}
-              >
-              <Swiper
-              pagination={{ 
-                clickable: true,
-                dynamicBullets: true,
-               }}
-              //effect={"coverflow"}
-              spaceBetween={50}
-              slidesPerView={1}
-              loop={true}
-              coverflowEffect={{
-                rotate: 20,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: false
-              }}
-              >
-              
-                <SwiperSlide>
-                  <img src={apartamentoRetroImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={apartamentoRetroImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={apartamentoRetroImage} width={750} /> 
-                </SwiperSlide>
-            
-                <SwiperSlide>
-                  <img src={apartamentoRetroImage} width={750} /> 
-                </SwiperSlide>
-            
-              </Swiper>
-            </Styled.Carroussel>
-          </>
+          <RetroCaroussel />
+        )}
+
+        {selected === "equalityDiversity" && (
+          <EqualityCaroussel />
         )}
       
       </Styled.ProjectContainer>

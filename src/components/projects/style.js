@@ -53,7 +53,7 @@ export const TitleContainer = styled.div`
   }
 
   .swiper-wrapper {
-    padding: 0px 15px;
+    padding: 0px 20px;
   }
 `;
 
