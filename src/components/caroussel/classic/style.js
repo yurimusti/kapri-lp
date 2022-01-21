@@ -3,6 +3,11 @@ import { layout, typography, flexbox, position, space } from "styled-system";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+export const Image = styled.img`
+  max-height: 100%;
+  width: 100%;
+`;
+
 export const ProjectTitle = styled.span`
   ${typography}
   ${flexbox}
@@ -21,7 +26,7 @@ export const Progress = styled.span`
   font-size: 12px;
   color: black;
   opacity: 0.4;
-`
+`;
 
 export const ProjectContainer = styled.div`
   ${space}
@@ -34,7 +39,7 @@ export const DescriptionContainer = styled.div`
   ${space}
   ${typography}
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   margin-top: 30px;
 `;
 
@@ -51,19 +56,17 @@ export const Description = styled.span`
   width: 400px;
 `;
 
-
 export const Carroussel = styled.div`
   ${layout}
   ${space}
   width: 100%;
   margin-top: 45px;
-  
+
   .swiper-container {
     height: 480px;
-    
-    .swiper-wrapper{
 
-      .swiper-slide{
+    .swiper-wrapper {
+      .swiper-slide {
         transition: 0.5s;
       }
       .swiper-slide-next {
@@ -74,11 +77,11 @@ export const Carroussel = styled.div`
     img {
       border-radius: 10px;
       border: 0px solid #fff;
-      -webkit-box-shadow: 29px 6px 32px -11px rgba(0,0,0,0.39); 
-      box-shadow: 29px 6px 32px -11px rgba(0,0,0,0.39);
+      -webkit-box-shadow: 29px 6px 32px -11px rgba(0, 0, 0, 0.39);
+      box-shadow: 29px 6px 32px -11px rgba(0, 0, 0, 0.39);
     }
   }
-  
+
   .swiper-pagination {
     display: flex;
     justify-content: flex-start;
@@ -92,8 +95,8 @@ export const Carroussel = styled.div`
     gap: 4px;
   }
 
-  .swiper-container-horizontal > .swiper-pagination-fraction.swiper-pagination-fraction {
-
+  .swiper-container-horizontal
+    > .swiper-pagination-fraction.swiper-pagination-fraction {
     //@media (max-width: 600px) {
     //  left: 55%;
     //}
@@ -102,26 +105,26 @@ export const Carroussel = styled.div`
     //}
   }
   .swiper-button-prev,
-    .swiper-button-next {
-      cursor: pointer;
-      display: block;
-      color: black;
-      top: 97.4%;
-    }
+  .swiper-button-next {
+    cursor: pointer;
+    display: block;
+    color: black;
+    top: 97.4%;
+  }
 
-    .swiper-button-prev {
-      left: 16px;
-    }
-    .swiper-button-next {
-      left: 96px;
-    }
+  .swiper-button-prev {
+    left: 16px;
+  }
+  .swiper-button-next {
+    left: 96px;
+  }
 
-    .swiper-button-prev:after, .swiper-button-next:after {
-      font-size: 14px;
-    }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 14px;
+  }
 
-    .swiper-wrapper {
-      padding: 0px 15px;
-    }
-
+  .swiper-wrapper {
+    padding: 0px 15px;
+  }
 `;
