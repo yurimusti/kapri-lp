@@ -44,7 +44,8 @@ const CleanCaroussel = () => {
         </Styled.Progress>
         <Styled.Description
         fontSize={[12, 16, 18]}
-        maxWidth={[300, 400, 600]}
+        width={["280px", "730px", "450px"]}
+        maxWidth={[280, 730, 450]}
         textAlign={["center", "inherit", "inherit"]}
         >
           {t("projetos.apartamentoClean.description")}
@@ -73,13 +74,13 @@ const CleanCaroussel = () => {
         }}
         >
 
-          <SwiperSlide><img src={clean1} width={750} /> </SwiperSlide>
-          <SwiperSlide><img src={clean2} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={clean3} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={clean4} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={clean5} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={clean6} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={clean7} width={750} /></SwiperSlide>
+          <SwiperSlide><img src={clean1} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide><img src={clean2} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={clean3} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={clean4} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={clean5} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={clean6} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={clean7} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
 
         </Swiper>
       </Styled.Carroussel>

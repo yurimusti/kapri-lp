@@ -42,14 +42,15 @@ const ClassicCaroussel = () => {
         </Styled.ProjectTitle>
         <Styled.Progress
         fontSize={[12, 14, 14]}
-        maxWidth={[300, 400, 600]}
+        maxWidth={["100%", 600, 600]}
         textAlign={["center", "inherit", "inherit"]}
         >
           {t("projetos.apartamentoClassico.progress")}
         </Styled.Progress>
         <Styled.Description 
         fontSize={[12, 14, 18]}
-        maxWidth={[300, 300, 600]}
+        width={["280px", "730px", "450px"]}
+        maxWidth={[280, 730, 450]}
         textAlign={["center", "inherit", "inherit"]}
         >
           {t("projetos.apartamentoClassico.description")}
@@ -57,8 +58,8 @@ const ClassicCaroussel = () => {
       </Styled.DescriptionContainer>
       
       <Styled.Carroussel
-      pt={["50px", "100px", "100px"]}
-      ml={["0px", "100px", "100px"]}
+      pt={["50px", "30px", "100px"]}
+      ml={["0px", "0px", "100px"]}
       >
         <Swiper
         pagination={{ 
@@ -66,8 +67,8 @@ const ClassicCaroussel = () => {
          }}
         navigation
         //effect={"coverflow"}
-        spaceBetween={50}
-        slidesPerView={window.innerWidth < 768 ? 1 : 2}
+        spaceBetween={window.innerWidth < 1200  ? 400 : 50}
+        slidesPerView={window.innerWidth < 768  ? 1 : 2}
         loop={true}
         coverflowEffect={{
           rotate: 20,
@@ -77,18 +78,13 @@ const ClassicCaroussel = () => {
           slideShadows: false
         }}
         >
+          <SwiperSlide><img src={quarto2} width={window.innerWidth < 1200  ? 380 : 750}  /></SwiperSlide>
+          <SwiperSlide><img src={quarto3} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={quarto4} width={window.innerWidth < 1200  ? 380 : 750}  /></SwiperSlide>
+          <SwiperSlide><img src={sala} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide><img src={salaEstarJantar2} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={salaJantar2} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
 
-          <SwiperSlide><img src={corredorEspelho} width={750} /> </SwiperSlide>
-          <SwiperSlide><img src={corredorFoto} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={escritorio1} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={escritorio2} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={quarto1} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={quarto2} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={quarto3} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={quarto4} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={sala} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={salaEstarJantar2} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={salaJantar2} width={750} /></SwiperSlide>
           
         </Swiper>
       </Styled.Carroussel>

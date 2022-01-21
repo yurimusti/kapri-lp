@@ -114,7 +114,7 @@ const Projects = () => {
       <Styled.ProjectContainer
       pl={[0, 50, 144]}
       justifyContent={["center", "flex-start", "flex-start"]}
-      flexDirection={["column", "row", "row"]}
+      flexDirection={["column", "column", "row"]}
       alignItems={["center", "flex-start", "flex-start" ]}
       > 
         {selected === "apartamentoClassico" && (

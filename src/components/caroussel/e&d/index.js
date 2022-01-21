@@ -52,7 +52,8 @@ const EqualityCaroussel = () => {
         </Styled.Progress>
         <Styled.Description
         fontSize={[12, 16, 18]}
-        maxWidth={[300, 400, 600]}
+        width={["280px", "730px", "450px"]}
+        maxWidth={[280, 730, 450]}
         textAlign={["center", "inherit", "inherit"]}
         >
           {t("projetos.equalityDiversity.description")}
@@ -81,22 +82,22 @@ const EqualityCaroussel = () => {
         }}
         >
 
-          <SwiperSlide>  <img src={casa} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa2} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa3} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa4} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa5} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa6} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa7} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa8} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa9} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa10} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa11} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa12} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa13} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa14} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa15} width={750} /> </SwiperSlide>
-          <SwiperSlide>  <img src={casa16} width={750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa2} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa3} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa4} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa5} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa6} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa7} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa8} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa9} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa10} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa11} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa12} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa13} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa14} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa15} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide>  <img src={casa16} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
 
         </Swiper>
       </Styled.Carroussel>

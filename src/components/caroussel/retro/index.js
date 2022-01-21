@@ -48,7 +48,8 @@ const RetroCaroussel = () => {
         </Styled.Progress>
         <Styled.Description
         fontSize={[12, 16, 18]}
-        maxWidth={[300, 400, 600]}
+        width={["280px", "730px", "450px"]}
+        maxWidth={[280, 730, 450]}
         textAlign={["center", "inherit", "inherit"]}
         >
           {t("projetos.apartamentoRetro.description")}
@@ -77,18 +78,18 @@ const RetroCaroussel = () => {
         }}
         >
   
-          <SwiperSlide> <img src={retro} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro2} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro3} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro4} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro5} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro6} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro7} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro8} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro9} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro10} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro11} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={retro12} width={750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro2} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro3} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro4} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro5} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro6} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro7} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro8} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro9} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro10} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro11} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={retro12} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
 
         </Swiper>
       </Styled.Carroussel>

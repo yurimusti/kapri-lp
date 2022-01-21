@@ -42,6 +42,7 @@ export const Image1 = styled.img`
   z-index: 3;
   margin-left: 138px;
   margin-top: 60px;
+  width: 60%
 `;
 
 export const Image2 = styled.img`
@@ -49,6 +50,7 @@ export const Image2 = styled.img`
   border: none;
   position: absolute;
   z-index: 4;
+  width: 40%;
   bottom: 0;
   right: 0;
   margin-bottom: 85px;

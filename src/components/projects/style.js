@@ -10,6 +10,33 @@ export const BoxProjects = styled.div`
   width: 100%;
   background: #fafafa;
   overflow: hidden;
+
+  @media (max-width: 1350px) {
+    height: 100vh;
+  }
+
+  @media (max-width: 1200px) {
+    height: 130vh;
+  }
+
+  @media (max-width: 830px) {
+    height: 145vh;
+  }
+
+  @media (max-width: 768px) {
+    height: 180vh;
+  }
+  
+  @media (max-width: 520px) {
+    height: 160vh;
+  }
+  
+  @media (max-width: 380px) {
+    height: 220vh;
+  }
+  //@media (max-width: 768px) {
+  //  height: 140vh;
+  //}
 `;
 
 export const NavContainer = styled.div`
@@ -36,6 +63,16 @@ export const TitleContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  .swiper-wrapper{
+        padding: 0px 65px;
+      }
+  
+  @media (max-width: 768px) { 
+      .swiper-wrapper{
+        padding: 0px 20px;
+      }
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     color: black;
@@ -52,9 +89,6 @@ export const TitleContainer = styled.div`
     font-size: 14px;
   }
 
-  .swiper-wrapper {
-    padding: 0px 20px;
-  }
 `;
 
 export const NavTitle = styled.button`
@@ -71,6 +105,7 @@ export const NavTitle = styled.button`
   :hover {
     color: black;
   }
+  
 `;
 
 export const Title = styled.div`
@@ -87,6 +122,11 @@ export const ProjectContainer = styled.div`
   ${flexbox}
   ${typography}
   display: flex;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const TitleProject = styled.span`
@@ -173,12 +213,12 @@ export const Carroussel = styled.div`
 
   .swiper-container-horizontal > .swiper-pagination-fraction.swiper-pagination-fraction {
 
-    //@media (max-width: 600px) {
-    //  left: 55%;
-    //}
-    //@media (max-width: 768px) {
-    //  left: 55%;
-    //}
+  //  @media (max-width: 600px) {
+  //    left: 90%;
+  //  }
+  //  @media (max-width: 768px) {
+  //    left: 25%;
+  //  }
   }
   .swiper-button-prev,
     .swiper-button-next {

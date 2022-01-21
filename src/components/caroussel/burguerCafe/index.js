@@ -72,13 +72,13 @@ const BurgerCafeCaroussel = () => {
         }}
         >
 
-          <SwiperSlide><img src={burguerImg1} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={burguerImg2} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={burguerImg3} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={burguerImg4} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={burguerImg5} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={burguerImg6} width={750} /></SwiperSlide>
-          <SwiperSlide><img src={burguerImg7} width={750} /></SwiperSlide>
+          <SwiperSlide><img src={burguerImg1} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={burguerImg2} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={burguerImg3} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={burguerImg4} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={burguerImg5} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={burguerImg6} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
+          <SwiperSlide><img src={burguerImg7} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
 
         </Swiper>
       </Styled.Carroussel>

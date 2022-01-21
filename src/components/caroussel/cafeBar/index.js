@@ -42,7 +42,8 @@ const CafeBarCaroussel = () => {
         </Styled.Progress>
         <Styled.Description
         fontSize={[12, 16, 18]}
-        maxWidth={[300, 400, 600]}
+        width={["280px", "730px", "450px"]}
+        maxWidth={[280, 730, 450]}
         textAlign={["center", "inherit", "inherit"]}
         >
           {t("projetos.cafeBar.description")}
@@ -71,12 +72,12 @@ const CafeBarCaroussel = () => {
           }}
           >
 
-          <SwiperSlide> <img src={cafeBar} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={cafeBar2} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={cafeBar3} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={cafeBar4} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={cafeBar5} width={750} /> </SwiperSlide>
-          <SwiperSlide> <img src={cafeBar6} width={750} /> </SwiperSlide>
+          <SwiperSlide> <img src={cafeBar} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={cafeBar2} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={cafeBar3} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={cafeBar4} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={cafeBar5} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
+          <SwiperSlide> <img src={cafeBar6} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
 
         </Swiper>
       </Styled.Carroussel>

@@ -18,6 +18,17 @@ export const ImageContainer = styled.div`
   /* bottom: 0; */
   /* left: 110px; */
   z-index: 5;
+
+  @media (max-width: 860px) {
+    width: 24%;
+    bottom: 10%;
+  }
+  
+  @media (max-width: 830px) {
+    width: 40%;
+    bottom: 55%;
+    left: 32%;
+  }
 `;
 
 export const Image = styled.img`

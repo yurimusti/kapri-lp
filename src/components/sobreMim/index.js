@@ -29,7 +29,10 @@ const Sobremim = () => {
             <Styled.Profissao>{t("sobreMim.nomeProfissao")}</Styled.Profissao>
           </Styled.Description>
         </Styled.DescriptionContainer>
-        <Styled.DescriptionInfo ml={[0, 44, 10]}>
+        <Styled.DescriptionInfo 
+        ml={[0, 44, 10]}
+        pb={[30, 30, 30]}
+        >
           {t("sobreMim.descricao")}
         </Styled.DescriptionInfo>
       </Styled.InfoContainer>
