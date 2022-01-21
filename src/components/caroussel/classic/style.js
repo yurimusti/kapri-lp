@@ -24,7 +24,7 @@ export const Progress = styled.span`
   font-size: 12px;
   color: black;
   opacity: 0.4;
-`
+`;
 
 export const ProjectContainer = styled.div`
   ${space}
@@ -37,7 +37,7 @@ export const DescriptionContainer = styled.div`
   ${space}
   ${typography}
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   margin-top: 30px;
 `;
 
@@ -64,7 +64,6 @@ export const Description = styled.span`
   }
 `;
 
-
 export const Carroussel = styled.div`
   ${layout}
   ${space}
@@ -84,7 +83,8 @@ export const Carroussel = styled.div`
     
     .swiper-wrapper{
 
-      .swiper-slide{
+    .swiper-wrapper {
+      .swiper-slide {
         transition: 0.5s;
         padding-top: 45px;
 
@@ -124,7 +124,7 @@ export const Carroussel = styled.div`
       }
     }
   }
-  
+
   .swiper-pagination {
     display: flex;
     justify-content: flex-start;
@@ -237,9 +237,10 @@ export const Carroussel = styled.div`
 
     }
 
-    .swiper-button-prev:after, .swiper-button-next:after {
-      font-size: 14px;
-    }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 14px;
+  }
 
     .swiper-wrapper {
       padding: 0px 15px;

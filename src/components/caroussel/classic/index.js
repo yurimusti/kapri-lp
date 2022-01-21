@@ -3,40 +3,39 @@ import { useTranslation } from "react-i18next";
 
 import * as Styled from "./style";
 
-import corredorEspelho from "../../../assets/caroussel/classic/corredorEspelho.png"
-import corredorFoto from "../../../assets/caroussel/classic/corredorFoto.png"
-import escritorio1 from "../../../assets/caroussel/classic/escritorio1.png"
-import escritorio2 from "../../../assets/caroussel/classic/escritorio2.png"
-import quarto1 from "../../../assets/caroussel/classic/quarto1.png"
-import quarto2 from "../../../assets/caroussel/classic/quarto2.png"
-import quarto3 from "../../../assets/caroussel/classic/quarto3.png"
-import quarto4 from "../../../assets/caroussel/classic/quarto4.png"
-import sala from "../../../assets/caroussel/classic/sala.png"
-import salaEstarJantar from "../../../assets/caroussel/classic/salaEstarJantar.png"
-import salaEstarJantar2 from "../../../assets/caroussel/classic/salaEstarJantar2.png"
-import salaJantar from "../../../assets/caroussel/classic/salaJantar.png"
-import salaJantar2 from "../../../assets/caroussel/classic/salaJantar2.png"
+import corredorEspelho from "../../../assets/caroussel/classic/corredorEspelho.png";
+import corredorFoto from "../../../assets/caroussel/classic/corredorFoto.png";
+import escritorio1 from "../../../assets/caroussel/classic/escritorio1.png";
+import escritorio2 from "../../../assets/caroussel/classic/escritorio2.png";
+import quarto1 from "../../../assets/caroussel/classic/quarto1.png";
+import quarto2 from "../../../assets/caroussel/classic/quarto2.png";
+import quarto3 from "../../../assets/caroussel/classic/quarto3.png";
+import quarto4 from "../../../assets/caroussel/classic/quarto4.png";
+import sala from "../../../assets/caroussel/classic/sala.png";
+import salaEstarJantar from "../../../assets/caroussel/classic/salaEstarJantar.png";
+import salaEstarJantar2 from "../../../assets/caroussel/classic/salaEstarJantar2.png";
+import salaJantar from "../../../assets/caroussel/classic/salaJantar.png";
+import salaJantar2 from "../../../assets/caroussel/classic/salaJantar2.png";
 
-import SwiperCore, { Navigation, Pagination, EffectCoverflow } from 'swiper';
+import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/swiper-bundle.min.css'
-import 'swiper/swiper.min.css'
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/components/pagination/pagination.scss'
-import 'swiper/components/effect-fade/effect-fade.scss'
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/effect-fade/effect-fade.scss";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
 const ClassicCaroussel = () => {
-
   const { t } = useTranslation();
 
-  return( 
+  return (
     <>
       <Styled.DescriptionContainer>
-        <Styled.ProjectTitle 
-        alignSelf={["center", "inherit", "inherit"]}
-        fontSize={[20, 26, 32]}
+        <Styled.ProjectTitle
+          alignSelf={["center", "inherit", "inherit"]}
+          fontSize={[20, 26, 32]}
         >
           {t("projetos.apartamentoClassico.title")}
         </Styled.ProjectTitle>
@@ -56,13 +55,13 @@ const ClassicCaroussel = () => {
           {t("projetos.apartamentoClassico.description")}
         </Styled.Description>
       </Styled.DescriptionContainer>
-      
+
       <Styled.Carroussel
       pt={["50px", "30px", "100px"]}
       ml={["0px", "0px", "100px"]}
       >
         <Swiper
-        pagination={{ 
+          pagination={{
             type: "fraction",
          }}
         navigation
@@ -89,7 +88,7 @@ const ClassicCaroussel = () => {
         </Swiper>
       </Styled.Carroussel>
     </>
-  )
-} 
+  );
+};
 
 export default ClassicCaroussel;
