@@ -30,7 +30,7 @@ const Projects = () => {
   const navigationNextRef = React.useRef(null);
 
   return (
-    <Styled.BoxProjects id="projects" height={["220vh", "140vh", "110vh"]}>
+    <Styled.BoxProjects id="projects" height={["100%", "100%", "100%"]}>
       <Styled.NavContainer>
         <Styled.Title
           pl={[44, 44, 144]}

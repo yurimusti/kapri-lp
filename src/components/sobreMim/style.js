@@ -19,6 +19,16 @@ export const ImageContainer = styled.div`
   /* left: 110px; */
   z-index: 5;
 
+  @media (max-width: 1200px) {
+    width: 24%;
+    bottom: 0%;
+  }
+
+  @media (max-width: 1200px) {
+    width: 24%;
+    bottom: 0%;
+  }
+
   @media (max-width: 860px) {
     width: 24%;
     bottom: 10%;
@@ -26,7 +36,13 @@ export const ImageContainer = styled.div`
   
   @media (max-width: 830px) {
     width: 40%;
-    bottom: 55%;
+    bottom: 60%;
+    left: 32%;
+  }
+
+  @media (max-width: 389px) {
+    width: 40%;
+    bottom: 70%;
     left: 32%;
   }
 `;

@@ -152,19 +152,30 @@ export const Carroussel = styled.div`
 
   .swiper-container-horizontal > .swiper-pagination-fraction.swiper-pagination-fraction {
 
+    z-index: -10;
+
     @media (max-width: 1200px) { 
       top: 63.7%;
       left: -2%;
+      z-index: -10;
     }
 
     @media (max-width: 640px) {
       left: 40%;
-      top: 65.8%;
+      top: 75.9%;
+      z-index: -10;
     }
 
-    @media (max-width: 390px) {
+    @media (max-width: 440px) {
       left: 36%;
       top: 65.8%;
+      z-index: -10;
+    }
+
+    @media (max-width: 380px) {
+      left: 36%;
+      top: 56.8%;
+      z-index: -10;
     }
 
   }
@@ -185,7 +196,15 @@ export const Carroussel = styled.div`
       }
 
       @media (max-width: 640px) {
+        top: 80%;
+      }
+
+      @media (max-width: 440px) {
         top: 70%;
+      }
+
+      @media (max-width: 380px) {
+        top: 61.1%;
       }
     }
 
@@ -225,8 +244,8 @@ export const Carroussel = styled.div`
         left: 58%;
       }
 
-      @media (max-width: 450px) {
-        left: 63%;
+      @media (max-width: 440px) {
+        left: 55%;
       }
 
       @media (max-width: 390px) {
@@ -247,9 +266,10 @@ export const Carroussel = styled.div`
         padding: 0px 0px;
       }
 
-      @media (max-width: 640px) {
-        padding-left: 50px;
+      img {
+        @media (max-width: 640px) {
+          width: 100%;  
+        }
       }
     }
-
 `;

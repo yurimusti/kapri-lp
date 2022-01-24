@@ -10,33 +10,6 @@ export const BoxProjects = styled.div`
   width: 100%;
   background: #fafafa;
   overflow: hidden;
-
-  @media (max-width: 1350px) {
-    height: 100vh;
-  }
-
-  @media (max-width: 1200px) {
-    height: 130vh;
-  }
-
-  @media (max-width: 830px) {
-    height: 145vh;
-  }
-
-  @media (max-width: 768px) {
-    height: 180vh;
-  }
-  
-  @media (max-width: 520px) {
-    height: 160vh;
-  }
-  
-  @media (max-width: 380px) {
-    height: 220vh;
-  }
-  //@media (max-width: 768px) {
-  //  height: 140vh;
-  //}
 `;
 
 export const NavContainer = styled.div`

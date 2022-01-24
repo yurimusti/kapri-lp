@@ -10,7 +10,7 @@ const Sobremim = () => {
   const { t } = useTranslation();
   return (
     <Styled.BoxSobremim minHeight={["110vh", "80vh", "80vh"]} id="sobremim">
-      <Styled.ImageContainer width={['50%', '45%', '22%']} left={["30%", "30%", 110]} bottom={['50%', '50%', 0]}>
+      <Styled.ImageContainer width={['50%', '45%', '22%']} left={["30%", "30%", 110]} bottom={['40%', '50%', 0]}>
         <Styled.Image width={["85%", "80%", "100%"]} src={image} />
       </Styled.ImageContainer>
       <Styled.InfoContainer
