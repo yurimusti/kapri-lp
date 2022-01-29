@@ -18,7 +18,7 @@ const Routes = ({ showLoading, user }) => {
       </Styled.Loading>
       <Switch>
         <Route path="/" exact component={Landingpage} />
-        <Route path="/Login" exact component={Login} />
+        <Route path="/login" exact component={Login} />
         <PrivateRoute path="/dashboard" exact component={Dashboard} />
         <PrivateRoute path="/clientes" exact component={Clientes} />
       </Switch>
