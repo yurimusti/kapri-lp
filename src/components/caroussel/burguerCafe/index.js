@@ -11,6 +11,7 @@ import burguerImg5 from "../../../assets/caroussel/burguerCafe/burguer5.jpg"
 import burguerImg6 from "../../../assets/caroussel/burguerCafe/burguer6.jpg"
 import burguerImg7 from "../../../assets/caroussel/burguerCafe/burguer7.jpg"
 
+
 import SwiperCore, { Navigation, Pagination, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.min.css'

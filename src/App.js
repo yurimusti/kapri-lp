@@ -1,15 +1,34 @@
 import React from "react";
+import { Router } from "react-router-dom";
 
-import { BrowserRouter } from "react-router-dom";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  useQuery,
+  gql,
+} from "@apollo/client";
 
-import Router from "./routes"
+import Routes from "./routes";
+import history from "./services/history";
 
-const App = () => {
+import GlobalStyle from "./styles/global";
+
+const client = new ApolloClient({
+  uri: "https://api-idrinks.herokuapp.com/graphql",
+  // uri: "http://localhost:3000/graphql",
+  cache: new InMemoryCache(),
+});
+
+function App() {
   return (
-    <BrowserRouter>
-      <Router/>
-    </BrowserRouter>
+    <ApolloProvider client={client}>
+      <Router history={history}>
+        <Routes />
+        <GlobalStyle />
+      </Router>
+    </ApolloProvider>
   );
-};
+}
 
 export default App;

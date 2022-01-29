@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { layout, typography, flexbox, position, space } from "styled-system";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export const BoxProjects = styled.div`
   ${layout}

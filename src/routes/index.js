@@ -1,18 +1,29 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
+import PrivateRoute from "./privateRoute";
+import * as Styled from "./styles";
+import { ReactComponent as LoadingSVG } from "../assets/svg/loading.svg";
+
+import Landingpage from "../pages/landingpage";
+import Dashboard from "../pages/dashboard";
+import Clientes from "../pages/clientes";
 import Login from "../pages/login";
-import LandingPage from "../pages/landingpage";
 
-const Router = () => {
+const Routes = ({ showLoading, user }) => {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="/login" element={<Login/>} />
-      </Routes>
+      <Styled.Loading show={showLoading}>
+        <LoadingSVG />
+      </Styled.Loading>
+      <Switch>
+        <Route path="/" exact component={Landingpage} />
+        <Route path="/Login" exact component={Login} />
+        <PrivateRoute path="/dashboard" exact component={Dashboard} />
+        <PrivateRoute path="/clientes" exact component={Clientes} />
+      </Switch>
     </>
   );
 };
 
-export default Router;
+export default Routes;
