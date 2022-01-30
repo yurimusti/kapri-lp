@@ -11,6 +11,7 @@ export const Header = styled.div`
   align-items: center;
   border: 1px solid #eff0f1;
   width: 100%;
+
 `;
 
 export const HeaderBoxText = styled.div`
@@ -24,11 +25,11 @@ export const HeaderText = styled.span`
   font-size: 28px;
   line-height: 36px;
   color: #56595e;
-  padding-left: 44px;
+  padding-left: 38px;
 `;
 
 export const HeaderBoxButton = styled.div`
-  margin-right: 40px;
+  padding-right: 40px;
 `;
 
 export const Body = styled.div`
@@ -56,7 +57,7 @@ export const StatusFuncionamentoText = styled.span`
   font-size: 12px;
   line-height: 22px;
   text-transform: uppercase;
-  ${({ value }) => (value === true ? `color: #252733;` : `color: #C5C7CD;`)}
+  ${({ value }) => (value === true ? `color: #76D854;` : `color: #F15151;`)}
 `;
 
 export const ColumnItemText = styled.span`
@@ -65,49 +66,24 @@ export const ColumnItemText = styled.span`
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* grayscale / black */
 
   color: #252733;
 `;
 
-export const ColumnItemBox = styled.div`
-  width: 100;
+export const Row = styled.div`
+  width: 100%;
+  flex: 1;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  margin-left: -5px;
 `;
 
-export const BoxSearch = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-`;
-
-export const Number = styled.span`
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 22px;
-  text-transform: uppercase;
-`;
-
-export const Email = styled.span`
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 22px;
-  text-transform: uppercase;
-`;
-
-export const Delete = styled.span`
-  cursor: pointer;
+export const Item = styled.div`
   flex: 1;
-  transition: 0.5s;
-  
-  :hover {
-    color: #ff7c7c;
-  }
+  margin-right: 8px;
+  width: 100%;
 `;
-

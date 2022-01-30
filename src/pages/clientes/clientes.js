@@ -1,60 +1,91 @@
 import React, { useState, useEffect } from "react";
-import { Table } from "antd";
+import { Table, notification, Tag } from "antd";
 
 import * as Styled from "./styles";
 
-import Switch from "../../components/switch";
 import Button from "../../components/button";
 import Input from "../../components/input";
 
-import history from "../../services/history";
 import { gql, useQuery, useLazyQuery, useMutation } from "@apollo/client";
 
-const GET_ALL_USERS = gql`
+
+const GET_ALL_MARCAS = gql`
   query {
-    getAllUsers {
+    getAllMarcas {
       status {
         status
         message
       }
       data {
+        _id
         nome
-        sobrenome
-        celular
-        status
+        imageUrl
       }
     }
   }
 `;
 
-const Clientes = () => {
-  const { loadingData, errorLogin, data } = useQuery(GET_ALL_USERS);
-  const [dataState, setDataState] = useState([
-    // {
-    //   _id: "1",
-    //   nome: "Yuri",
-    //   sobrenome: "Mustifaga",
-    //   cpf: "12396554603",
-    //   celular: "(31) 9 73615857",
-    //   ativo: false,
-    // },
-  ]);
-
+//const REMOVE_MARCA = gql`
+//  mutation($inputRemoveMarca: CreateMarcaInput) {
+//    deleteMarca(input: $inputRemoveMarca) {
+//      status {
+//        status
+//        message
+//      }
+//    }
+//  }
+//`;
+//
+const Cliente = ({ history }) => {
+  const { loadingData, errorLogin, data, refetch } = useQuery(GET_ALL_MARCAS);
+  //const [
+  //  removeMarca,
+  //  { loadingUpdate, errorCreate, data: dataRemoveMarca },
+  //] = useMutation(REMOVE_MARCA);
+//
   useEffect(() => {
     if (data) {
-      if (data.getAllUsers.data !== undefined) {
-        setDataState(data.getAllUsers.data);
+      if (data.getAllMarcas !== undefined) {
+        setDataState(data.getAllMarcas.data);
       }
     }
-  }, [data]);
+  }, [data, history.location]);
+//
+  useEffect(() => {
+    refetch();
+  }, [history]);
+//
+  //useEffect(() => {
+  //  if (dataRemoveMarca !== undefined) {
+  //    if (dataRemoveMarca.deleteMarca.status.status === 200) {
+  //      notification.success({
+  //        message: "Sucesso",
+  //        description: dataRemoveMarca.deleteMarca.status.message,
+  //      });
+  //      refetch();
+  //    } else {
+  //      notification.error({
+  //        message: "Algo de errado aconteceu.",
+  //        description: dataRemoveMarca.deleteMarca.status.message,
+  //      });
+  //    }
+  //  }
+  //}, [dataRemoveMarca]);
 
-  const _handleChangeActive = (value, record) => {
-    const newData = dataState.map((e) =>
-      e.key === record.key ? { ...e, ativo: value } : { ...e }
-    );
-    //CHANGE NA API
-    setDataState(newData);
-  };
+  const [dataState, setDataState] = useState([]);
+
+  const _toPrice = (value) =>
+    value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
+  //const _handleDelete = (data) => {
+  //  removeMarca({
+  //    variables: {
+  //      inputRemoveMarca: {
+  //        _id: data._id,
+  //      },
+  //    },
+  //  });
+  //};
 
   const columns = [
     {
@@ -62,14 +93,20 @@ const Clientes = () => {
       dataIndex: "nome",
       key: "nome",
       render: (text, record) => (
-        <Styled.ColumnItemText>{`${record.nome} ${record.sobrenome}`}</Styled.ColumnItemText>
+        <Styled.ColumnItemBox style={{ flex: 8 }}>
+          <span style={{ marginLeft: 8 }}>{text}</span>
+        </Styled.ColumnItemBox>
       ),
     },
     {
-      title: "Celular",
-      dataIndex: "celular",
-      key: "celular",
-      render: (text) => <Styled.ColumnItemText>{text}</Styled.ColumnItemText>,
+      title: "Número",
+      dataIndex: "numero",
+      key: "numero",
+      render: (value) => (
+        <Styled.Number>
+          (41) 99999-5555
+        </Styled.Number>
+      ),
     },
     {
       title: "Email",
@@ -82,13 +119,15 @@ const Clientes = () => {
       ),
     },
     {
-      title: "Ativo",
-      dataIndex: "status",
-      key: "status",
+      title: "Ações",
+      dataIndex: "",
+      key: "",
       render: (text, record) => (
-        <Styled.DeleteClient>
-          excluir
-        </Styled.DeleteClient>
+        <Styled.Delete
+          //onClick={() => _handleDelete(record)}
+        >
+          EXCLUIR
+        </Styled.Delete>
       ),
     },
   ];
@@ -100,7 +139,7 @@ const Clientes = () => {
           <Styled.HeaderText>Clientes</Styled.HeaderText>
         </Styled.HeaderBoxText>
         <Styled.HeaderBoxButton>
-          {/* <Button text="Criar" onClick={() => history.push("/createProduto")} /> */}
+          <Button text="Criar" onClick={() => history.push("/createClientes")} />
         </Styled.HeaderBoxButton>
       </Styled.Header>
       <Styled.Body>
@@ -109,7 +148,7 @@ const Clientes = () => {
             placeholder="Search"
             onChange={(ee) => {
               if (ee.target.value === "") {
-                setDataState(data.getAllUsers.data);
+                setDataState(data.getAllMarcas.data);
               } else {
                 setDataState(
                   dataState.filter((e) => e.nome.includes(ee.target.value))
@@ -124,4 +163,4 @@ const Clientes = () => {
   );
 };
 
-export default Clientes;
+export default Cliente;

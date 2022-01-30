@@ -6,9 +6,9 @@ import * as Styled from "./styles";
 import { ReactComponent as LoadingSVG } from "../assets/svg/loading.svg";
 
 import Landingpage from "../pages/landingpage";
-import Dashboard from "../pages/dashboard";
-import Clientes from "../pages/clientes";
 import Login from "../pages/login";
+import Clientes from "../pages/clientes";
+import CreateClientes from "../pages/createClientes";
 
 const Routes = ({ showLoading, user }) => {
   return (
@@ -19,8 +19,8 @@ const Routes = ({ showLoading, user }) => {
       <Switch>
         <Route path="/" exact component={Landingpage} />
         <Route path="/Login" exact component={Login} />
-        <PrivateRoute path="/dashboard" exact component={Dashboard} />
         <PrivateRoute path="/clientes" exact component={Clientes} />
+        <PrivateRoute path="/createClientes" exact component={CreateClientes} />
       </Switch>
     </>
   );

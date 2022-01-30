@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as Loading } from "../../assets/svg/loading.svg";
+import { ReactComponent as Plus } from "../../assets/svg/add.svg";
 import * as Styled from "./styles";
 
 const Button = ({ text = "", onClick = () => {}, loading = false }) => {
@@ -13,7 +14,9 @@ const Button = ({ text = "", onClick = () => {}, loading = false }) => {
           <Loading />
         </Styled.ButtonIcon>
       ) : (
-        <Styled.ButtonText>{text}</Styled.ButtonText>
+        <Styled.ButtonText>
+          {text}
+        </Styled.ButtonText>
       )}
     </Styled.Button>
   );

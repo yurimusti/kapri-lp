@@ -1,2 +1,3 @@
-import clientes from "./clientes";
-export default clientes;
+import Clientes from "./clientes"
+
+export default Clientes;

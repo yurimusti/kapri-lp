@@ -24,11 +24,12 @@ export const HeaderText = styled.span`
   font-size: 28px;
   line-height: 36px;
   color: #56595e;
-  padding-left: 44px;
+  padding-left: 64px;
 `;
 
 export const HeaderBoxButton = styled.div`
-  margin-right: 40px;
+  flex: 2;
+  margin-right: 32px;
 `;
 
 export const Body = styled.div`
@@ -49,49 +50,6 @@ export const Body = styled.div`
   }
 `;
 
-export const StatusFuncionamentoText = styled.span`
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 22px;
-  text-transform: uppercase;
-  ${({ value }) => (value === true ? `color: #252733;` : `color: #C5C7CD;`)}
-`;
-
-export const ColumnItemText = styled.span`
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-
-  color: #252733;
-`;
-
-export const ColumnItemBox = styled.div`
-  width: 100;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: -5px;
-`;
-
-export const BoxSearch = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-`;
-
-export const Number = styled.span`
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 22px;
-  text-transform: uppercase;
-`;
-
 export const Email = styled.span`
   font-family: Inter;
   font-style: normal;
@@ -101,13 +59,27 @@ export const Email = styled.span`
   text-transform: uppercase;
 `;
 
-export const Delete = styled.span`
+export const DeleteClient = styled.span `
   cursor: pointer;
-  flex: 1;
-  transition: 0.5s;
-  
+  color: #ff6c6c;
+  font-size: 16px;
+   
   :hover {
-    color: #ff7c7c;
+    color: #ff5252;
   }
+`
+
+export const ColumnItemText = styled.span`
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #aea2b4;
 `;
 
+export const BoxSearch = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+`;
