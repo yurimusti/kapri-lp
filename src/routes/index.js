@@ -8,7 +8,6 @@ import { ReactComponent as LoadingSVG } from "../assets/svg/loading.svg";
 import Landingpage from "../pages/landingpage";
 import Login from "../pages/login";
 import Clientes from "../pages/clientes";
-import CreateClientes from "../pages/createClientes";
 
 const Routes = ({ showLoading, user }) => {
   return (
@@ -20,7 +19,6 @@ const Routes = ({ showLoading, user }) => {
         <Route path="/" exact component={Landingpage} />
         <Route path="/Login" exact component={Login} />
         <PrivateRoute path="/clientes" exact component={Clientes} />
-        <PrivateRoute path="/createClientes" exact component={CreateClientes} />
       </Switch>
     </>
   );

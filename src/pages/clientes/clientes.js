@@ -1,92 +1,59 @@
 import React, { useState, useEffect } from "react";
-import { Table, notification, Tag } from "antd";
+import { gql, useQuery, useMutation } from "@apollo/client";
+
+import { Table, notification } from "antd";
 
 import * as Styled from "./styles";
 
-import Button from "../../components/button";
 import Input from "../../components/input";
 
-import { gql, useQuery, useLazyQuery, useMutation } from "@apollo/client";
+import { ReactComponent as Sair } from "../../assets/svg/icon/sair.svg";
+import kapriLogo from "../../assets/img/kapriLogo.png";
 
+import history from "../../services/history";
 
-const GET_ALL_MARCAS = gql`
-  query {
-    getAllMarcas {
-      status {
-        status
-        message
-      }
+const GET_ALL_LEADS = gql`
+  query Data {
+    getAllLeads {
       data {
-        _id
         nome
-        imageUrl
+        email
+        telefone
+        mensagem
+        createdAt
       }
     }
   }
 `;
 
-//const REMOVE_MARCA = gql`
-//  mutation($inputRemoveMarca: CreateMarcaInput) {
-//    deleteMarca(input: $inputRemoveMarca) {
-//      status {
-//        status
-//        message
-//      }
-//    }
-//  }
-//`;
-//
-const Cliente = ({ history }) => {
-  const { loadingData, errorLogin, data, refetch } = useQuery(GET_ALL_MARCAS);
-  //const [
-  //  removeMarca,
-  //  { loadingUpdate, errorCreate, data: dataRemoveMarca },
-  //] = useMutation(REMOVE_MARCA);
-//
+const Cliente = () => {
+  const { loading: loadingData, error: errorData, data, refetch } = useQuery(GET_ALL_LEADS);
+  const [dataState, setDataState] = useState([]);
+  
   useEffect(() => {
     if (data) {
-      if (data.getAllMarcas !== undefined) {
-        setDataState(data.getAllMarcas.data);
+      if (data.getAllLeads !== undefined) {
+        setDataState(data.getAllLeads.data);
       }
     }
   }, [data, history.location]);
-//
+  //
   useEffect(() => {
     refetch();
   }, [history]);
-//
-  //useEffect(() => {
-  //  if (dataRemoveMarca !== undefined) {
-  //    if (dataRemoveMarca.deleteMarca.status.status === 200) {
-  //      notification.success({
-  //        message: "Sucesso",
-  //        description: dataRemoveMarca.deleteMarca.status.message,
-  //      });
-  //      refetch();
-  //    } else {
-  //      notification.error({
-  //        message: "Algo de errado aconteceu.",
-  //        description: dataRemoveMarca.deleteMarca.status.message,
-  //      });
-  //    }
-  //  }
-  //}, [dataRemoveMarca]);
 
-  const [dataState, setDataState] = useState([]);
+  useEffect(() => {
+    const token = localStorage.getItem("token") 
 
-  const _toPrice = (value) =>
-    value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-
-  //const _handleDelete = (data) => {
-  //  removeMarca({
-  //    variables: {
-  //      inputRemoveMarca: {
-  //        _id: data._id,
-  //      },
-  //    },
-  //  });
-  //};
-
+    if (token === null || token !== "karen123") {
+      history.push("/login")
+      notification.warning({
+        message: "Aviso",
+        description: "Você não tem acesso a esta área",
+      })
+    } 
+  }, []);
+ 
   const columns = [
     {
       title: "Nome",
@@ -99,64 +66,59 @@ const Cliente = ({ history }) => {
       ),
     },
     {
-      title: "Número",
-      dataIndex: "numero",
-      key: "numero",
-      render: (value) => (
-        <Styled.Number>
-          (41) 99999-5555
-        </Styled.Number>
-      ),
+      title: "Telefone",
+      dataIndex: "telefone",
+      key: "telefone",
+      render: (number, record) => <Styled.Number>{number}</Styled.Number>,
     },
     {
       title: "Email",
       dataIndex: "email",
       key: "email",
-      render: (value) => (
-        <Styled.Email>
-          idrinks@email.com.br
-        </Styled.Email>
-      ),
+      render: (email, record) => <Styled.Email>{email}</Styled.Email>,
     },
     {
-      title: "Ações",
-      dataIndex: "",
-      key: "",
-      render: (text, record) => (
-        <Styled.Delete
-          //onClick={() => _handleDelete(record)}
-        >
-          EXCLUIR
-        </Styled.Delete>
-      ),
+      title: "Mensagem",
+      dataIndex: "mensagem",
+      key: "mensagem",
+      render: (message, record) => <Styled.Message>{message}</Styled.Message>,
     },
   ];
 
   return (
     <Styled.Main>
       <Styled.Header>
-        <Styled.HeaderBoxText>
-          <Styled.HeaderText>Clientes</Styled.HeaderText>
-        </Styled.HeaderBoxText>
-        <Styled.HeaderBoxButton>
-          <Button text="Criar" onClick={() => history.push("/createClientes")} />
-        </Styled.HeaderBoxButton>
+        <Styled.ImageContainer>
+          <Styled.Image width={["52%", "36%", "45%"]} alt="" src={kapriLogo} />
+        </Styled.ImageContainer>
+        <Styled.Exit
+          onClick={() => history.push("/login")}
+        >
+          <Sair 
+          style={{ background: "", width: 18, height: 18 }} />
+          Logout
+        </Styled.Exit>
       </Styled.Header>
       <Styled.Body>
-        <Styled.BoxSearch>
-          <Input
-            placeholder="Search"
-            onChange={(ee) => {
-              if (ee.target.value === "") {
-                setDataState(data.getAllMarcas.data);
-              } else {
-                setDataState(
-                  dataState.filter((e) => e.nome.includes(ee.target.value))
-                );
-              }
-            }}
-          />
-        </Styled.BoxSearch>
+        <Styled.SubHeader>
+          <Styled.BodyTitle>
+            <Styled.Title>Clientes</Styled.Title>
+          </Styled.BodyTitle>
+          <Styled.BoxSearch>
+            <Input
+              placeholder="Search"
+              onChange={(ee) => {
+                if (ee.target.value === "") {
+                  setDataState(data.getAllLeads.data);
+                } else {
+                  setDataState(
+                    dataState.filter((e) => e.nome.includes(ee.target.value))
+                  );
+                }
+              }}
+            />
+          </Styled.BoxSearch>
+        </Styled.SubHeader>
         <Table dataSource={dataState} columns={columns} />
       </Styled.Body>
     </Styled.Main>
