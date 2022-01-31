@@ -7,50 +7,33 @@ import { Select } from "antd";
 
 import kapriLogo from "../../assets/img/kapriLogo.png";
 import globalIcon from "../../assets/icon/global.svg";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { Option } = Select;
+  const { t } = useTranslation();
   return (
-    <Styled.Main 
-    pr={[44, 44, 144]}
-    pl={[44, 44, 144]}
-    >
+    <Styled.Main pr={[44, 44, 144]} pl={[44, 44, 144]}>
       <Styled.ImageContainer href="#home">
-        <Styled.Image
-          width={["52%", "36%", "45%"]}
-          alt=""
-          src={kapriLogo}
-        />
+        <Styled.Image width={["52%", "36%", "45%"]} alt="" src={kapriLogo} />
       </Styled.ImageContainer>
       <Styled.NavBar display={["none", "none", "flex"]}>
         <Styled.NavTitles display={["none", "none", "flex"]}>
-          <Styled.Title 
-          href="#servicos"
-          fontSize={[12, 13, 15]}
-          >
-            Serviços
+          <Styled.Title href="#servicos" fontSize={[12, 13, 15]}>
+            {t("header.servicos")}
           </Styled.Title>
-          <Styled.Title
-           href="#projects"
-           fontSize={[12, 13, 15]}
-           >
-            Projetos
+          <Styled.Title href="#projects" fontSize={[12, 13, 15]}>
+            {t("header.projetos")}
           </Styled.Title>
-          <Styled.Title 
-          href="#sobremim"
-          fontSize={[12, 13, 15]}
-          >
-            Sobre mim
+          <Styled.Title href="#sobremim" fontSize={[12, 13, 15]}>
+            {t("header.sobreMin")}
           </Styled.Title>
-          <Styled.Title
-           href="#contact"
-           fontSize={[12, 13, 15]}
-          >
-            Contato
+          <Styled.Title href="#contact" fontSize={[12, 13, 15]}>
+            {t("header.contato")}
           </Styled.Title>
         </Styled.NavTitles>
         <Styled.DropLanguage display={["flex", "flex", "flex", "flex"]}>
-          <Styled.globalIcon alt="" src={globalIcon}/>
+          <Styled.globalIcon alt="" src={globalIcon} />
           <Select
             className="antD"
             defaultValue="de"
@@ -58,7 +41,7 @@ const Header = () => {
             onChange={(e) => {
               i18next.changeLanguage(e);
             }}
-            >
+          >
             <Option value="pt-br">PT-BR</Option>
             <Option value="en">EN</Option>
             {/* <Option value="es">ES</Option> */}

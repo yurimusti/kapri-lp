@@ -1,5 +1,11 @@
 const ch = {
   translation: {
+    header: {
+      servicos: "Dienstleistungen",
+      projetos: "Projekte",
+      sobreMin: "Über mich",
+      contato: "Kontakt",
+    },
     banner: {
       title: "Interior Design",
       verProjetos: "Projekte ansehen",
@@ -44,8 +50,8 @@ const ch = {
       horarioFuncionamento: "Öffnungszeiten: 10:00am às 06:00pm - GMT +3",
       formName: "Name*",
       formEmail: "Email*",
-      formTelefone: "Telefone*",
-      formMensagem: "Telefon*",
+      formTelefone: "Telefon*",
+      formMensagem: "Nachricht*",
       formTextButton: "Senden*",
       adminArea: "Verwaltungsbereich",
       copyright:
@@ -65,34 +71,38 @@ const ch = {
       apartamentoClassico: {
         title: "Klassische Wohnung",
         progress: "Abgeschlossenes Projekt",
-        description: "Der klassische Stil kommt nie aus Mode, ist zeitlos und unvergänglich.  Diejenigen die diese art von Dekoration mögen sind auf der Suche auf einem elegantem, raffiniertem und anspruchsvolles Umfeld.   Einige der Eigenschaften dieses Stils sind Stücke aus dunklem oder mittlerem Holz, metallische Accessoires aus Bronze und Gold, Natursteine ​​und gut bearbeitete Wände in den Farben Beige, Weiss und Stroh. Herr und Frau Bufanio hatten schon schöne Familienmöbel die auch im Projekt hinzugefügt wurden." 
+        description:
+          "Der klassische Stil kommt nie aus Mode, ist zeitlos und unvergänglich.  Diejenigen die diese art von Dekoration mögen sind auf der Suche auf einem elegantem, raffiniertem und anspruchsvolles Umfeld.   Einige der Eigenschaften dieses Stils sind Stücke aus dunklem oder mittlerem Holz, metallische Accessoires aus Bronze und Gold, Natursteine ​​und gut bearbeitete Wände in den Farben Beige, Weiss und Stroh. Herr und Frau Bufanio hatten schon schöne Familienmöbel die auch im Projekt hinzugefügt wurden.",
       },
       apartamentoClean: {
         title: "Saubere Wohnung",
         progress: "In Gange",
-        description: "" 
+        description: "",
       },
       burguerCafe: {
         title: "Burger-Kaffee",
         progress: "Abgeschlossenes Projekt",
-        description: "Inspiriert von der afrikanischen Kultur in Brasilien haben wir ein authentisches Projekt geschaffen, um an die Wurzeln des Besitzers zu erinnern. Afrika ist ein warmer, farbenfroher Ort, reich an alten Kulturen und reich an Schönheit, also haben wir einen Ort geschaffen, um unsere Vorfahren zu preisen und zu ehren. Das Black Burger Café ist ein gemütlicher Ort, an dem Sie sich mit Freunden und Familie treffen und köstliche Burger probieren können, die auch diesen Kampf ehren." 
+        description:
+          "Inspiriert von der afrikanischen Kultur in Brasilien haben wir ein authentisches Projekt geschaffen, um an die Wurzeln des Besitzers zu erinnern. Afrika ist ein warmer, farbenfroher Ort, reich an alten Kulturen und reich an Schönheit, also haben wir einen Ort geschaffen, um unsere Vorfahren zu preisen und zu ehren. Das Black Burger Café ist ein gemütlicher Ort, an dem Sie sich mit Freunden und Familie treffen und köstliche Burger probieren können, die auch diesen Kampf ehren.",
       },
       cafeBar: {
         title: "Kaffeebar der 70er",
         progress: "In Gange",
-        description: "Mit dem musikalischen Konzept haben wir Stile aus den 50er, 60er Jahren, Gitarre, Discos und Musikmaschinen. Es ist ein schöner Ort, um die Happy Hour mit Freunden nach der Arbeit zu genießen, oder einen Nachmittag Pause zu nehmen, wenn Sie in der Stadt sind wandernd. Es ist ein Ort mit dem besten aller Zeiten, sehr einladend und authentisch." 
+        description:
+          "Mit dem musikalischen Konzept haben wir Stile aus den 50er, 60er Jahren, Gitarre, Discos und Musikmaschinen. Es ist ein schöner Ort, um die Happy Hour mit Freunden nach der Arbeit zu genießen, oder einen Nachmittag Pause zu nehmen, wenn Sie in der Stadt sind wandernd. Es ist ein Ort mit dem besten aller Zeiten, sehr einladend und authentisch.",
       },
       apartamentoRetro: {
         title: "Retro-Wohnung",
         progress: "In Gange",
-        description: "Der Retro-Stil bietet eine Retrospektive in die Vergangenheit, die mit Möbeln, Drucke und Gegenständen spielt, die in anderen Jahrzehnten populär waren. Im Gegensatz zum Vintage-Trend, bei dem echte Stücke, Artikel und andere Dekorationszubehör aus der Vergangenheit zum Vorschein kommen, werden im Retro-Stil neue Versionen angeboten, die von alten inspiriert sind, sodass das Beste, was andere Zeiten zu bieten haben, recycelt wird. Die Möbel haben spezifische Eigenschaften, wie spitze Füße..." 
+        description:
+          "Der Retro-Stil bietet eine Retrospektive in die Vergangenheit, die mit Möbeln, Drucke und Gegenständen spielt, die in anderen Jahrzehnten populär waren. Im Gegensatz zum Vintage-Trend, bei dem echte Stücke, Artikel und andere Dekorationszubehör aus der Vergangenheit zum Vorschein kommen, werden im Retro-Stil neue Versionen angeboten, die von alten inspiriert sind, sodass das Beste, was andere Zeiten zu bieten haben, recycelt wird. Die Möbel haben spezifische Eigenschaften, wie spitze Füße...",
       },
       equalityDiversity: {
         title: "E&D",
         progress: "In Gange",
-        description: "" 
+        description: "",
       },
-    }
+    },
   },
 };
 

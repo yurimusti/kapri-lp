@@ -1,5 +1,11 @@
 const en = {
   translation: {
+    header: {
+      servicos: "Services",
+      projetos: "Projects",
+      sobreMin: "About me",
+      contato: "Contact",
+    },
     banner: {
       title: "Interior Design",
       verProjetos: "See Projects",
@@ -63,29 +69,38 @@ const en = {
       apartamentoClassico: {
         title: "Classic Apartment",
         progress: "Project finished",
-        description: "The classic style never goes out of fashion, is timeless and everlasting. Those who like this type of decoration are looking for an elegant, refined and sophisticated environment. Some of the characteristics of this style include pieces made of dark or medium wood, metallic accessories made of bronze and gold, natural stones and well-finished walls in shades of beige, white and straw. Mr and Mrs Bufanio already had beautiful family furniture that was also added to the project." 
+        description:
+          "The classic style never goes out of fashion, is timeless and everlasting. Those who like this type of decoration are looking for an elegant, refined and sophisticated environment. Some of the characteristics of this style include pieces made of dark or medium wood, metallic accessories made of bronze and gold, natural stones and well-finished walls in shades of beige, white and straw. Mr and Mrs Bufanio already had beautiful family furniture that was also added to the project.",
       },
       apartamentoClean: {
         title: "Clean Apartment",
         progress: "In Progress",
-        description: "" 
+        description: "",
       },
       burguerCafe: {
         title: "Coffe Burguer",
         progress: "Project finished",
-        description: "Inspired by the African culture in Brazil, we created an authentic project to remember the owner's roots. Africa is a warm, colorful place, rich in ancient cultures and rich in beauty, so we created a place to praise and honor our ancestors. Black Burger Café is a cozy place for you to gather with friends and family, and taste delicious burgers that also honor this struggle." 
+        description:
+          "Inspired by the African culture in Brazil, we created an authentic project to remember the owner's roots. Africa is a warm, colorful place, rich in ancient cultures and rich in beauty, so we created a place to praise and honor our ancestors. Black Burger Café is a cozy place for you to gather with friends and family, and taste delicious burgers that also honor this struggle.",
       },
       cafeBar: {
         title: "Cafe bar 70's",
         progress: "In Progress",
-        description: "With the musical concept, styles from the 50s, 60s, we have guitar, discos and musical machines. It's a fun place to enjoy happy hour with friends after work, or to take an afternoon break when you're wandering around town. It is a place with the best of all times, very welcoming and authentic." 
+        description:
+          "With the musical concept, styles from the 50s, 60s, we have guitar, discos and musical machines. It's a fun place to enjoy happy hour with friends after work, or to take an afternoon break when you're wandering around town. It is a place with the best of all times, very welcoming and authentic.",
       },
       apartamentoRetro: {
+        title: "Retro apartment",
+        progress: "In Progress",
+        description:
+          "The retro style offers a look back at the past, playing with furniture, prints and items that were popular in other decades. Unlike the vintage trend, which showcases real pieces, items and other decorative accessories from the past, the retro style offers new versions inspired by the old ones so that the best that other times have to offer is recycled. The furniture has specific characteristics such as pointed feet, use of futon in the upholstery, sofas / armchairs with narrower arms and the presence of some colorful and patterned pieces. Walls are important elements in retro. The use of paints, wallpapers, mosaics and old tiles is part of the characterization of the environment. Most of the furniture selected for this project is by well-known designers from the 1900s to the 1990s.",
+      },
+      equalityDiversity: {
         title: "E&D",
         progress: "In Progress",
-        description: ""
+        description: "",
       },
-    }
+    },
   },
 };
 
