@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {layout, space} from "styled-system";
 
 export const Main = styled.div`
   display: flex;
@@ -6,29 +7,61 @@ export const Main = styled.div`
 `;
 
 export const Header = styled.div`
-  height: 80px;
   display: flex;
+  justify-content: space-between;
+  height: 60px;
   align-items: center;
-  border: 1px solid #eff0f1;
   width: 100%;
+  padding: 0px 40px;
+  background-color: #272425;
 `;
 
-export const HeaderBoxText = styled.div`
-  flex: 8;
+export const Image = styled.img`
+  ${layout}
+  ${space}
+  cursor: pointer;
+  transition: 0.5s;
+
+  :hover {
+    transform: scale(1.05);
+  }
 `;
 
-export const HeaderText = styled.span`
-  font-family: Inter;
-  font-style: normal;
+export const ImageContainer = styled.a`
+`;
+
+export const SubHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+`;
+
+export const BodyTitle = styled.div`
+`;
+
+export const Title = styled.span`
   font-weight: 600;
   font-size: 28px;
-  line-height: 36px;
   color: #56595e;
-  padding-left: 44px;
 `;
 
-export const HeaderBoxButton = styled.div`
-  margin-right: 40px;
+export const Exit = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff73;
+  border-bottom: 0px solid #00000060;
+  padding: 0px 0px;
+  border-radius: 0px;
+  transition: 0.5s;
+
+  :hover {
+    color: #fffffff0;
+    border-radius: 20px;
+  }
 `;
 
 export const Body = styled.div`
@@ -41,10 +74,7 @@ export const Body = styled.div`
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
-    /* grayscale / gray */
-
+    max-width: 200px;
     color: #9fa2b4;
   }
 `;
@@ -101,13 +131,13 @@ export const Email = styled.span`
   text-transform: uppercase;
 `;
 
-export const Delete = styled.span`
-  cursor: pointer;
-  flex: 1;
-  transition: 0.5s;
-  
-  :hover {
-    color: #ff7c7c;
-  }
-`;
-
+export const Message = styled.span`
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+  max-width: 100px;
+  width: 50px;
+`

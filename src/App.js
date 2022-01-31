@@ -15,7 +15,7 @@ import history from "./services/history";
 import GlobalStyle from "./styles/global";
 
 const client = new ApolloClient({
-  uri: "https://api-idrinks.herokuapp.com/graphql",
+  uri: "https://lp-kapri.herokuapp.com/graphql",
   // uri: "http://localhost:3000/graphql",
   cache: new InMemoryCache(),
 });

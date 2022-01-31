@@ -133,7 +133,7 @@ export const Carroussel = styled.div`
   .swiper-pagination {
     display: flex;
     justify-content: flex-start;
-    padding: 0px 46px;
+    padding: 0px 44px;
     
     @media (max-width: 1350px) {
       display: flex;
@@ -146,7 +146,7 @@ export const Carroussel = styled.div`
         display: flex;
         justify-content: flex-start;
         top: 65.3%;
-        padding: 0px 38px;
+        padding: 0px 34px;
       }
   }
 
@@ -160,10 +160,10 @@ export const Carroussel = styled.div`
   .swiper-container-horizontal > .swiper-pagination-fraction.swiper-pagination-fraction {
 
     z-index: -10;
-    top: 83.1%;
+    top: 90.1%;
 
     @media (max-width: 1500px) {
-        top: 60.3%;
+        top: 62%;
         left: -0.2%;
       }
 
@@ -197,10 +197,10 @@ export const Carroussel = styled.div`
       cursor: pointer;
       display: block;
       color: black;
-      top: 87.4%;      
+      top: 94.4%;      
 
       @media (max-width: 1500px) {
-        top: 64.3%;
+        top: 66.3%;
         left: -2%;
       }
 
@@ -233,7 +233,7 @@ export const Carroussel = styled.div`
       }
 
       @media (max-width: 640px) {
-        left: 42%;
+        left: 40%;
       }
 
     }
@@ -262,7 +262,7 @@ export const Carroussel = styled.div`
       }
 
       @media (max-width: 390px) {
-        left: 58%;
+        left: 56%;
       }
 
     }
