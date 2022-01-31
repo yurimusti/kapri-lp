@@ -46,6 +46,7 @@ const en = {
       formTelefone: "Cellphone*",
       formMensagem: "Message*",
       formTextButton: "Send*",
+      adminArea: "Administrative Area",
       copyright: "Copyright © 2021 Kapri interior design, all rights reserved",
     },
     messagesToast: {

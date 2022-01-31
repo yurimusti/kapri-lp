@@ -35,18 +35,46 @@ export const TitleContainer = styled.div`
   align-items: center;
 
   .swiper-wrapper{
+    padding: 0px 200px;
+  }
+
+  @media (max-width: 1500px) {
+    .swiper-wrapper{
+        padding: 0px 140px;
+      }
+  }
+
+  @media (max-width: 1200px) {
+    .swiper-wrapper{
+        padding: 0px 90px;
+      }
+  }
+
+  @media (max-width: 980px) {
+    .swiper-wrapper{
         padding: 0px 50px;
       }
+  }
+
+  @media (max-width: 880px) {
+    .swiper-wrapper{
+        padding: 0px 30px;
+      }
+  }
   
   @media (max-width: 768px) { 
-      .swiper-wrapper{
-        padding: 0px 20px;
-      }
+    .swiper-wrapper{
+      padding: 0px 20px;
+    }
   }
 
   .swiper-button-prev,
   .swiper-button-next {
     color: black;
+    
+    @media (max-width: 642px) {
+      top: 12px;
+    }
   }
 
   .swiper-button-prev {
@@ -75,6 +103,10 @@ export const NavTitle = styled.button`
 
   :hover {
     color: black;
+  }
+
+  @media (max-width: 642px) {
+    font-size: 10px;
   }
   
 `;

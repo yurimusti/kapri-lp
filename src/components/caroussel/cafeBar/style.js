@@ -57,6 +57,16 @@ export const Description = styled.span`
   }
 
   @media (max-width: 768px) {
+    width: 500px;
+    max-width: 500px;
+  }
+
+  @media (max-width: 642px) {
+    width: 380px;
+    max-width: 380px;
+  }
+
+  @media (max-width: 390px) {
     width: 280px;
     max-width: 280px;
   }
@@ -70,7 +80,6 @@ export const Carroussel = styled.div`
   @media (max-width: 1200px) {
     margin-left: 0px;
   }
-
 
   @media (max-width: 520px) {
     margin-left: 0px;
@@ -98,8 +107,8 @@ export const Carroussel = styled.div`
       -moz-box-shadow: 44px 15px 50px 0px rgba(0,0,0,0.17);
       box-shadow: 44px 15px 50px 0px rgba(0,0,0,0.17);
 
-      @media (max-width: 1350px) {
-        width: 650px;
+      @media (max-width: 1500px) {
+        width: 500px;
         -webkit-box-shadow: 13px 1px 50px 0px rgba(0,0,0,0.17);
         -moz-box-shadow: 13px 1px 50px 0px rgba(0,0,0,0.17);
         box-shadow: 13px 1px 50px 0px rgba(0,0,0,0.17);
@@ -151,6 +160,12 @@ export const Carroussel = styled.div`
   .swiper-container-horizontal > .swiper-pagination-fraction.swiper-pagination-fraction {
 
     z-index: -10;
+    top: 83.1%;
+
+    @media (max-width: 1500px) {
+        top: 60.3%;
+        left: -0.2%;
+      }
 
     @media (max-width: 1200px) { 
       top: 63.7%;
@@ -182,10 +197,10 @@ export const Carroussel = styled.div`
       cursor: pointer;
       display: block;
       color: black;
-      top: 97.4%;
+      top: 87.4%;      
 
-      @media (max-width: 1350px) {
-        top: 84.3%;
+      @media (max-width: 1500px) {
+        top: 64.3%;
         left: -2%;
       }
 

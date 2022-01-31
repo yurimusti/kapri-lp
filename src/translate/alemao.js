@@ -47,6 +47,7 @@ const ch = {
       formTelefone: "Telefone*",
       formMensagem: "Telefon*",
       formTextButton: "Senden*",
+      adminArea: "Verwaltungsbereich",
       copyright:
         "Copyright © 2021 Kapri interior design, Alle Rechte vorbehalten",
     },

@@ -49,6 +49,7 @@ const ptbr = {
       formTextButton: "Enviar*",
       copyright:
         "Copyright © 2021 Kapri interior design, todos os direitos reservados",
+      adminArea: "Área Administrativa",
     },
     messagesToast: {
       aviso: "Aviso",

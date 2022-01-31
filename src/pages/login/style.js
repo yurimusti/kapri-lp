@@ -144,6 +144,18 @@ export const LinkBtn = styled.a`
     }
 `;
 
+export const AdminLogin = styled.a`
+  cursor: pointer;
+  margin-top: 25px;
+  font-style: bold;
+  font-size: 14px;
+  color: #c3c3c3;
+
+  :hover {
+    color: #fff;
+  }
+`
+
 export const LogoContainer = styled.div`
   margin-right: 22px;
     margin-bottom: 34px;
