@@ -6,14 +6,15 @@ const ch = {
       sobreMin: "Über mich",
       contato: "Kontakt",
     },
+
     banner: {
       title: "Interior Design",
       verProjetos: "Projekte ansehen",
       description1:
-        "Wir verwandeln und kreieren Umgebungen mit dem für Sie gemachten",
+        "Verwandeln Sie Ihre Umgebung in etwas Erstaunliches und Einzigartiges.",
       description2:
-        "Designer. Jedes Detail ist darauf ausgelegt, eine persönliche ",
-      description3: "Atmosphäre mit hoher Qualität zu schaffen.",
+        "Wir denken an jedes Detail, um etwas zu schaffen, das Ihren Bedürfnissen",
+      description3: "und Ihrer Persönlichkeit entspricht.",
     },
     especialista: {
       title: "Wir sind Experten",
@@ -75,7 +76,7 @@ const ch = {
           "Der klassische Stil kommt nie aus Mode, ist zeitlos und unvergänglich.  Diejenigen die diese art von Dekoration mögen sind auf der Suche auf einem elegantem, raffiniertem und anspruchsvolles Umfeld.   Einige der Eigenschaften dieses Stils sind Stücke aus dunklem oder mittlerem Holz, metallische Accessoires aus Bronze und Gold, Natursteine ​​und gut bearbeitete Wände in den Farben Beige, Weiss und Stroh. Herr und Frau Bufanio hatten schon schöne Familienmöbel die auch im Projekt hinzugefügt wurden.",
       },
       apartamentoClean: {
-        title: "Saubere Wohnung",
+        title: "Clean Wohnung",
         progress: "In Gange",
         description: "",
       },
