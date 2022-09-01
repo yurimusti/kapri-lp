@@ -20,15 +20,16 @@ const Banner = () => {
         width={["90%", "82%", 700]}
       >
         <Styled.ButtonStyle
-          href="#projects"
+          // href="#projects"
+          onClick={() =>
+            window.open("https://calendly.com/kapri-interiordesign", "_blank")
+          }
           display={["none", "none", "flex"]}
           mb={[10, 10, 20]}
           // top={["105%", "105%", ""]}
           // left={["36%", "100%", ""]}
         >
-          <Styled.ButtonText>
-            {t("banner.verProjetos")}
-          </Styled.ButtonText>
+          <Styled.ButtonText>{t("banner.verProjetos")}</Styled.ButtonText>
         </Styled.ButtonStyle>
       </Styled.OpacityBox>
       <Styled.BoxLeft>
@@ -65,10 +66,5 @@ const Banner = () => {
     </Styled.BoxBanner>
   );
 };
-
-// width: 100%;
-// position: absolute;
-// left: 0;
-// }
 
 export default Banner;

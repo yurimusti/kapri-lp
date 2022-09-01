@@ -8,7 +8,7 @@ const ptbr = {
     },
     banner: {
       title: "Design de Interiores",
-      verProjetos: "Ver Projetos",
+      verProjetos: "Agende uma consultoria grátis",
       description1:
         "Transforme seu ambiente em algo incrível e exclusívo. Nós pensamos",
       description2:

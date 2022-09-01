@@ -8,7 +8,7 @@ const en = {
     },
     banner: {
       title: "Interior Design",
-      verProjetos: "See Projects",
+      verProjetos: "Schedule a free consultation",
       description1:
         "Transform your environment into something amazing and unique. We think about",
       description2:

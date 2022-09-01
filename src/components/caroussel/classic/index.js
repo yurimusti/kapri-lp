@@ -3,19 +3,20 @@ import { useTranslation } from "react-i18next";
 
 import * as Styled from "./style";
 
-import corredorEspelho from "../../../assets/caroussel/classic/corredorEspelho.png";
-import corredorFoto from "../../../assets/caroussel/classic/corredorFoto.png";
-import escritorio1 from "../../../assets/caroussel/classic/escritorio1.png";
-import escritorio2 from "../../../assets/caroussel/classic/escritorio2.png";
-import quarto1 from "../../../assets/caroussel/classic/quarto1.png";
-import quarto2 from "../../../assets/caroussel/classic/quarto2.png";
-import quarto3 from "../../../assets/caroussel/classic/quarto3.png";
-import quarto4 from "../../../assets/caroussel/classic/quarto4.png";
-import sala from "../../../assets/caroussel/classic/sala.png";
-import salaEstarJantar from "../../../assets/caroussel/classic/salaEstarJantar.png";
-import salaEstarJantar2 from "../../../assets/caroussel/classic/salaEstarJantar2.png";
-import salaJantar from "../../../assets/caroussel/classic/salaJantar.png";
-import salaJantar2 from "../../../assets/caroussel/classic/salaJantar2.png";
+import classic1 from "../../../assets/caroussel/classic/1.png";
+import classic2 from "../../../assets/caroussel/classic/2.png";
+import classic3 from "../../../assets/caroussel/classic/3.png";
+import classic4 from "../../../assets/caroussel/classic/4.png";
+import classic5 from "../../../assets/caroussel/classic/5.png";
+import classic6 from "../../../assets/caroussel/classic/6.png";
+import classic7 from "../../../assets/caroussel/classic/7.png";
+import classic8 from "../../../assets/caroussel/classic/8.png";
+import classic9 from "../../../assets/caroussel/classic/9.png";
+import classic10 from "../../../assets/caroussel/classic/10.png";
+import classic11 from "../../../assets/caroussel/classic/11.png";
+import classic12 from "../../../assets/caroussel/classic/12.png";
+import classic13 from "../../../assets/caroussel/classic/13.png";
+import classic14 from "../../../assets/caroussel/classic/14.png";
 
 import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -40,51 +41,141 @@ const ClassicCaroussel = () => {
           {t("projetos.apartamentoClassico.title")}
         </Styled.ProjectTitle>
         <Styled.Progress
-        fontSize={[12, 14, 14]}
-        maxWidth={["100%", 600, 600]}
-        textAlign={["center", "inherit", "inherit"]}
+          fontSize={[12, 14, 14]}
+          maxWidth={["100%", 600, 600]}
+          textAlign={["center", "inherit", "inherit"]}
         >
           {t("projetos.apartamentoClassico.progress")}
         </Styled.Progress>
-        <Styled.Description 
-        fontSize={[12, 14, 18]}
-        width={["280px", "730px", "450px"]}
-        maxWidth={[280, 730, 450]}
-        textAlign={["center", "inherit", "inherit"]}
+        <Styled.Description
+          fontSize={[12, 14, 18]}
+          width={["280px", "730px", "450px"]}
+          maxWidth={[280, 730, 450]}
+          textAlign={["center", "inherit", "inherit"]}
         >
           {t("projetos.apartamentoClassico.description")}
         </Styled.Description>
       </Styled.DescriptionContainer>
 
       <Styled.Carroussel
-      pt={["50px", "30px", "100px"]}
-      ml={["0px", "0px", "100px"]}
+        pt={["50px", "30px", "100px"]}
+        ml={["0px", "0px", "100px"]}
       >
         <Swiper
           pagination={{
             type: "fraction",
-         }}
-        navigation
-        //effect={"coverflow"}
-        spaceBetween={window.innerWidth < 1200  ? 400 : 50}
-        slidesPerView={window.innerWidth < 768  ? 1 : 2}
-        loop={true}
-        coverflowEffect={{
-          rotate: 20,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false
-        }}
+          }}
+          navigation
+          //effect={"coverflow"}
+          spaceBetween={window.innerWidth < 1200 ? 400 : 50}
+          slidesPerView={window.innerWidth < 768 ? 1 : 2}
+          loop={true}
+          coverflowEffect={{
+            rotate: 20,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
         >
-          <SwiperSlide><img src={quarto2} width={window.innerWidth < 1200  ? 380 : 750}  /></SwiperSlide>
-          <SwiperSlide><img src={quarto3} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
-          <SwiperSlide><img src={quarto4} width={window.innerWidth < 1200  ? 380 : 750}  /></SwiperSlide>
-          <SwiperSlide><img src={sala} width={window.innerWidth < 1200  ? 380 : 750} /> </SwiperSlide>
-          <SwiperSlide><img src={salaEstarJantar2} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
-          <SwiperSlide><img src={salaJantar2} width={window.innerWidth < 1200  ? 380 : 750} /></SwiperSlide>
-
-          
+          <SwiperSlide>
+            <img
+              src={classic1}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic2}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic3}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic4}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic5}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic6}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic7}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic8}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic9}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic10}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic11}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic12}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic13}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={classic14}
+              width={window.innerWidth < 1200 ? 380 : 750}
+              style={{ maxHeight: 281.25 }}
+            />
+          </SwiperSlide>
         </Swiper>
       </Styled.Carroussel>
     </>

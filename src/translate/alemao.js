@@ -9,7 +9,7 @@ const ch = {
 
     banner: {
       title: "Interior Design",
-      verProjetos: "Projekte ansehen",
+      verProjetos: "Vereinbaren Sie ein kostenloses Beratungsgespräch",
       description1:
         "Verwandeln Sie Ihre Umgebung in etwas Erstaunliches und Einzigartiges.",
       description2:

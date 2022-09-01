@@ -107,7 +107,7 @@ export const ButtonStyle = styled.a`
   ${space}
   ${position}
   background: transparent;
-  width: 30%;
+  width: 40%;
   height: 44px;
   border: 1px solid #000;
   cursor: pointer;
@@ -128,7 +128,7 @@ export const ButtonText = styled.span`
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
-  /* identical to box height */
+  text-align: center;
 
   color: #333333;
 `;
